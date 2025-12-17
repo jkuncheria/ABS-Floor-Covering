@@ -1,0 +1,7 @@
+{
+  "name": "ABS Floor Covering",
+  "description": "ABS Floor Covering Company is a full-service flooring company specializing in the installation of high-quality Hardwood, Laminate, Tile, Carpet and cabinetry. Located at 1430 N 29th Ave, Phoenix, AZ 85009, we proudly serve Phoenix, Dallas, El Paso, Denver, Las Vegas, and beyond throughout the Southwestern United States with expert craftsmanship and reliable service.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
