@@ -1,8 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Home, Building2, Clock, Shield, Users, CheckCircle, ArrowRight, Phone } from 'lucide-react';
+import SEO from '../components/SEO';
+import { SEO_CONFIG } from '../seoConfig';
 
 const Residential: React.FC = () => {
+  const seo = SEO_CONFIG.pages.residential;
+
   const services = [
     {
       icon: <Home className="w-8 h-8 text-blue-900" />,
@@ -71,7 +75,13 @@ const Residential: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-white px-4 md:px-16">
+    <>
+      <SEO 
+        title={seo.title}
+        description={seo.description}
+        canonical={`${SEO_CONFIG.baseUrl}${seo.path}`}
+      />
+      <section className="py-24 bg-white px-4 md:px-16">
       <div className="max-w-7xl mx-auto">
         
         {/* Hero Header */}
@@ -205,6 +215,7 @@ const Residential: React.FC = () => {
 
       </div>
     </section>
+    </>
   );
 };
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Star, Quote } from 'lucide-react';
 
 interface Testimonial {
@@ -62,6 +62,65 @@ const testimonials: Testimonial[] = [
 ];
 
 const Testimonials: React.FC = () => {
+
+  // Add Review Schema JSON-LD
+  useEffect(() => {
+    const reviewSchema = {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "ABS Floor Covering",
+      "image": "https://www.absflooring.com/abslogo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1430 N 29th Ave",
+        "addressLocality": "Phoenix",
+        "addressRegion": "AZ",
+        "postalCode": "85009",
+        "addressCountry": "US"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "bestRating": "5",
+        "worstRating": "1",
+        "reviewCount": testimonials.length.toString()
+      },
+      "review": testimonials.map(t => ({
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": t.name
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": t.rating.toString(),
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "reviewBody": t.text
+      }))
+    };
+
+    // Remove existing review schema if present
+    const existingScript = document.querySelector('script[data-schema="reviews"]');
+    if (existingScript) {
+      existingScript.remove();
+    }
+
+    // Add new review schema
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.setAttribute('data-schema', 'reviews');
+    script.textContent = JSON.stringify(reviewSchema);
+    document.head.appendChild(script);
+
+    return () => {
+      const scriptToRemove = document.querySelector('script[data-schema="reviews"]');
+      if (scriptToRemove) {
+        scriptToRemove.remove();
+      }
+    };
+  }, []);
 
   const renderStars = (rating: number) => {
     return Array.from({ length: 5 }).map((_, index) => (

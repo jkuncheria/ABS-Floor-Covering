@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronDown, ChevronUp, HelpCircle } from 'lucide-react';
 
@@ -140,6 +140,42 @@ const FAQ: React.FC = () => {
 
   // Flatten all FAQs for easier management
   const allFaqs = faqs.flatMap(category => category.questions);
+
+  // Add FAQ Schema JSON-LD
+  useEffect(() => {
+    const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": allFaqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
+    };
+
+    // Remove existing FAQ schema if present
+    const existingScript = document.querySelector('script[data-schema="faq"]');
+    if (existingScript) {
+      existingScript.remove();
+    }
+
+    // Add new FAQ schema
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.setAttribute('data-schema', 'faq');
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+
+    return () => {
+      const scriptToRemove = document.querySelector('script[data-schema="faq"]');
+      if (scriptToRemove) {
+        scriptToRemove.remove();
+      }
+    };
+  }, []);
 
   return (
     <section className="py-24 bg-white px-4 md:px-16">

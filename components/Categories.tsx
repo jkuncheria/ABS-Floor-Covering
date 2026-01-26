@@ -17,7 +17,10 @@ const Categories: React.FC = () => {
             <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-md mb-4 border-4 border-white group-hover:border-yellow-500 transition-colors duration-300">
               <img 
                 src={cat.image} 
-                alt={cat.name} 
+                alt={`${cat.name} flooring products - ABS Floor Covering Phoenix`} 
+                loading="lazy"
+                width="160"
+                height="160"
                 className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
               />
             </div>

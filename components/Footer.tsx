@@ -18,7 +18,10 @@ const Footer: React.FC = () => {
             <Link to="/" onClick={scrollToTop} className="inline-block mb-4">
               <img 
                 src="/abslogo.png" 
-                alt="ABS Floor Covering" 
+                alt="ABS Floor Covering - Commercial Flooring Contractor Phoenix AZ" 
+                loading="lazy"
+                width="160"
+                height="64"
                 className="h-12 md:h-16 w-auto object-contain"
               />
             </Link>

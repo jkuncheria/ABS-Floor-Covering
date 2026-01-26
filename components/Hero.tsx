@@ -63,8 +63,9 @@ const Hero: React.FC = () => {
             muted
             loop
             playsInline
-            preload="auto"
+            preload="none"
             poster="/hotel-thumbnail.png"
+            loading="lazy"
           >
             <source src="/hotel.mp4" type="video/mp4" />
           </video>

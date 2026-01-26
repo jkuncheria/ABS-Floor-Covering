@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import SEO from '../components/SEO';
+import { SEO_CONFIG } from '../seoConfig';
 
 const ProjectGallery: React.FC = () => {
+  const seo = SEO_CONFIG.pages.projectGallery;
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   const projects = [
@@ -94,7 +97,13 @@ const ProjectGallery: React.FC = () => {
   };
 
   return (
-    <section className="py-24 bg-white px-4 md:px-16">
+    <>
+      <SEO 
+        title={seo.title}
+        description={seo.description}
+        canonical={`${SEO_CONFIG.baseUrl}${seo.path}`}
+      />
+      <section className="py-24 bg-white px-4 md:px-16">
       <div className="max-w-7xl mx-auto">
         
         {/* Header */}
@@ -120,7 +129,10 @@ const ProjectGallery: React.FC = () => {
               <div className="aspect-square overflow-hidden bg-gray-200">
                 <img
                   src={project.image}
-                  alt={project.title}
+                  alt={`${project.title} - Commercial flooring project in ${project.location} by ABS Floor Covering`}
+                  loading="lazy"
+                  width="400"
+                  height="400"
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
                 />
               </div>
@@ -199,6 +211,7 @@ const ProjectGallery: React.FC = () => {
 
       </div>
     </section>
+    </>
   );
 };
 
