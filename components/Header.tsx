@@ -87,7 +87,7 @@ const Header: React.FC = () => {
           <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 md:relative md:left-0 md:top-0 md:transform-none md:col-start-2 md:col-end-3 md:flex md:justify-center">
             <Link to="/" onClick={scrollToTop} className="flex items-center justify-center group">
               <img 
-                src="/abslogo.png" 
+                src="/abslogo.webp" 
                 alt="ABS Floor Covering - Commercial Flooring Contractor Phoenix AZ" 
                 width="200"
                 height="80"

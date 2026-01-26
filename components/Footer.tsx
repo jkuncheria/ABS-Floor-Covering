@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
           <div>
             <Link to="/" onClick={scrollToTop} className="inline-block mb-4">
               <img 
-                src="/abslogo.png" 
+                src="/abslogo.webp" 
                 alt="ABS Floor Covering - Commercial Flooring Contractor Phoenix AZ" 
                 loading="lazy"
                 width="160"

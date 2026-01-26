@@ -7,32 +7,32 @@ const Carpet: React.FC = () => {
     {
       name: 'Plush',
       description: 'Luxurious and soft, plush carpet offers a smooth, velvety surface perfect for bedrooms and formal areas.',
-      image: '/products/carpet.png'
+      image: '/products/carpet.webp'
     },
     {
       name: 'Berber',
       description: 'Durable loop-pile construction ideal for high-traffic areas. Resistant to stains and easy to maintain.',
-      image: '/products/carpet.png'
+      image: '/products/carpet.webp'
     },
     {
       name: 'Frieze',
       description: 'Twisted fibers create a casual, comfortable texture. Perfect for family rooms and living spaces.',
-      image: '/products/carpet.png'
+      image: '/products/carpet.webp'
     },
     {
       name: 'Cut & Loop',
       description: 'Combines cut and loop piles for unique patterns and textures. Adds visual interest to any room.',
-      image: '/products/carpet.png'
+      image: '/products/carpet.webp'
     },
     {
       name: 'Textured',
       description: 'Multi-level loop construction provides durability and hides footprints. Great for active households.',
-      image: '/products/carpet.png'
+      image: '/products/carpet.webp'
     },
     {
       name: 'Saxony',
       description: 'Classic cut-pile style with a smooth, uniform appearance. Timeless elegance for any commercial space.',
-      image: '/products/carpet.png'
+      image: '/products/carpet.webp'
     }
   ];
 

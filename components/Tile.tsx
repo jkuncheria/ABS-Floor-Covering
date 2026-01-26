@@ -7,32 +7,32 @@ const Tile: React.FC = () => {
     {
       name: 'Ceramic',
       description: 'Affordable and versatile, ceramic tile is perfect for any room. Available in countless colors and patterns.',
-      image: '/products/tile.jpg'
+      image: '/products/tile.webp'
     },
     {
       name: 'Porcelain',
       description: 'Dense and durable, porcelain tile is ideal for high-traffic areas and wet spaces like bathrooms and kitchens.',
-      image: '/products/tile.jpg'
+      image: '/products/tile.webp'
     },
     {
       name: 'Natural Stone',
       description: 'Elegant marble, travertine, and slate bring natural beauty and unique character to your floors.',
-      image: '/products/tile.jpg'
+      image: '/products/tile.webp'
     },
     {
       name: 'Glass',
       description: 'Modern and sophisticated, glass tile creates stunning visual effects with light and color.',
-      image: '/products/tile.jpg'
+      image: '/products/tile.webp'
     },
     {
       name: 'Mosaic',
       description: 'Small tiles arranged in patterns create intricate designs perfect for accent areas and backsplashes.',
-      image: '/products/tile.jpg'
+      image: '/products/tile.webp'
     },
     {
       name: 'Large Format',
       description: 'Oversized tiles minimize grout lines for a sleek, contemporary look with easier maintenance.',
-      image: '/products/tile.jpg'
+      image: '/products/tile.webp'
     }
   ];
 

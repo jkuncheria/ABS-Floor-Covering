@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 z-0 pointer-events-none">
         {/* Fallback image while video loads or if it fails */}
         <div
-          className="absolute inset-0 bg-[url('/hotel-thumbnail.png')] bg-cover bg-center"
+          className="absolute inset-0 bg-[url('/hotel-thumbnail.webp')] bg-cover bg-center"
           aria-hidden="true"
         />
         <div className={`absolute inset-0 overflow-hidden transition-opacity duration-300 ${videoReady ? 'opacity-100' : 'opacity-0'}`}>
@@ -64,7 +64,7 @@ const Hero: React.FC = () => {
             loop
             playsInline
             preload="none"
-            poster="/hotel-thumbnail.png"
+            poster="/hotel-thumbnail.webp"
             loading="lazy"
           >
             <source src="/hotel.mp4" type="video/mp4" />

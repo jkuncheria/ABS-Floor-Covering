@@ -4,15 +4,15 @@ const LogoBanner: React.FC = () => {
   const logos = [
     {
       name: 'AMC Theatres',
-      image: '/Logos/AMC_Theatres_logo.svg.png',
+      image: '/Logos/AMC_Theatres_logo.svg.webp',
     },
     {
       name: 'Cambria Hotels',
-      image: '/Logos/cambria-hotels.png',
+      image: '/Logos/cambria-hotels.webp',
     },
     {
       name: 'Coach',
-      image: '/Logos/Coach-logo.png',
+      image: '/Logos/Coach-logo.webp',
     },
     {
       name: 'CSL',
@@ -20,15 +20,15 @@ const LogoBanner: React.FC = () => {
     },
     {
       name: 'Hilton',
-      image: '/Logos/hilton-international-logo-black-and-white.png',
+      image: '/Logos/hilton-international-logo-black-and-white.webp',
     },
     {
       name: 'Homewood Suites by Hilton',
-      image: '/Logos/homewood-suites-by-hilton-expands-footprint-in-arizona.jpg',
+      image: '/Logos/homewood-suites-by-hilton-expands-footprint-in-arizona.webp',
     },
     {
       name: 'University of Arizona',
-      image: '/Logos/uofa.png',
+      image: '/Logos/uofa.webp',
     },
     {
       name: 'HopSocial',
@@ -36,7 +36,7 @@ const LogoBanner: React.FC = () => {
     },
     {
       name: 'Embassy',
-      image: '/Logos/embassy.png',
+      image: '/Logos/embassy.webp',
     },
     {
       name: 'Partner',
@@ -88,6 +88,7 @@ const LogoBanner: React.FC = () => {
                   <img
                     src={logo.image}
                     alt={logo.name}
+                    loading="lazy"
                     className="max-h-full max-w-full object-contain"
                   />
                 </div>

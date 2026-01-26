@@ -7,32 +7,32 @@ const LuxuryVinyl: React.FC = () => {
     {
       name: 'Luxury Vinyl Plank (LVP)',
       description: 'Realistic wood-look planks that mimic hardwood. Perfect for any room where you want the beauty of wood with superior durability.',
-      image: '/products/vinyl.png'
+      image: '/products/vinyl.webp'
     },
     {
       name: 'Luxury Vinyl Tile (LVT)',
       description: 'Tile-look luxury vinyl that captures the elegance of stone and ceramic. Ideal for bathrooms, kitchens, and high-moisture areas.',
-      image: '/products/vinyl.png'
+      image: '/products/vinyl.webp'
     },
     {
       name: 'Waterproof LVP',
       description: '100% waterproof luxury vinyl plank perfect for basements, bathrooms, and kitchens. Never worry about water damage again.',
-      image: '/products/vinyl.png'
+      image: '/products/vinyl.webp'
     },
     {
       name: 'Rigid Core',
       description: 'Extra-thick, dimensionally stable planks with enhanced durability. Perfect for uneven subfloors and high-traffic areas.',
-      image: '/products/vinyl.png'
+      image: '/products/vinyl.webp'
     },
     {
       name: 'WPC (Wood Plastic Composite)',
       description: 'Advanced core technology combining wood and plastic for superior stability and comfort underfoot.',
-      image: '/products/vinyl.png'
+      image: '/products/vinyl.webp'
     },
     {
       name: 'SPC (Stone Plastic Composite)',
       description: 'Ultra-durable core made from stone and plastic. The most stable and waterproof option available.',
-      image: '/products/vinyl.png'
+      image: '/products/vinyl.webp'
     }
   ];
 

@@ -24,11 +24,11 @@ export const NAV_ITEMS: NavItem[] = [
 ];
 
 export const CATEGORIES: Category[] = [
-  { id: 'hardwood', name: 'Hardwood', image: '/products/hardwood.jpg' },
-  { id: 'carpet', name: 'Carpet', image: '/products/carpet.png' },
-  { id: 'luxury-vinyl', name: 'Luxury Vinyl', image: '/products/vinyl.png' },
-  { id: 'tile', name: 'Tile', image: '/products/tile.jpg' },
-  { id: 'laminate', name: 'Laminate', image: '/products/laminate.jpg' },
+  { id: 'hardwood', name: 'Hardwood', image: '/products/hardwood.webp' },
+  { id: 'carpet', name: 'Carpet', image: '/products/carpet.webp' },
+  { id: 'luxury-vinyl', name: 'Luxury Vinyl', image: '/products/vinyl.webp' },
+  { id: 'tile', name: 'Tile', image: '/products/tile.webp' },
+  { id: 'laminate', name: 'Laminate', image: '/products/laminate.webp' },
 ];
 
 export const DIFFERENCE_FEATURES: Feature[] = [

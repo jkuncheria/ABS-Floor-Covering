@@ -7,32 +7,32 @@ const Hardwood: React.FC = () => {
     {
       name: 'Oak',
       description: 'Classic and durable, oak is one of the most popular hardwood choices. Available in red and white varieties.',
-      image: '/products/hardwood.jpg'
+      image: '/products/hardwood.webp'
     },
     {
       name: 'Maple',
       description: 'Light-colored and smooth-grained, maple offers a modern, clean look perfect for contemporary commercial spaces.',
-      image: '/products/hardwood.jpg'
+      image: '/products/hardwood.webp'
     },
     {
       name: 'Hickory',
       description: 'Extremely hard and durable, hickory is perfect for high-traffic commercial areas.',
-      image: '/products/hardwood.jpg'
+      image: '/products/hardwood.webp'
     },
     {
       name: 'Walnut',
       description: 'Rich, dark tones with beautiful grain patterns. Walnut adds elegance and sophistication to any space.',
-      image: '/products/hardwood.jpg'
+      image: '/products/hardwood.webp'
     },
     {
       name: 'Cherry',
       description: 'Warm reddish tones that deepen over time. Cherry hardwood brings warmth and character to your commercial space.',
-      image: '/products/hardwood.jpg'
+      image: '/products/hardwood.webp'
     },
     {
       name: 'Bamboo',
       description: 'Eco-friendly and sustainable, bamboo offers the beauty of hardwood with exceptional durability.',
-      image: '/products/hardwood.jpg'
+      image: '/products/hardwood.webp'
     }
   ];
 

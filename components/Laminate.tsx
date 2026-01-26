@@ -7,32 +7,32 @@ const Laminate: React.FC = () => {
     {
       name: 'Standard Laminate',
       description: 'Classic laminate flooring that offers the look of hardwood at an affordable price. Perfect for bedrooms and living areas.',
-      image: '/products/laminate.jpg'
+      image: '/products/laminate.webp'
     },
     {
       name: 'Waterproof Laminate',
       description: 'Advanced technology makes this laminate 100% waterproof. Ideal for kitchens, bathrooms, and basements.',
-      image: '/products/laminate.jpg'
+      image: '/products/laminate.webp'
     },
     {
       name: 'Thick Laminate',
       description: 'Extra-thick planks provide enhanced durability and a more realistic feel underfoot. Great for high-traffic areas.',
-      image: '/products/laminate.jpg'
+      image: '/products/laminate.webp'
     },
     {
       name: 'Textured Laminate',
       description: 'Embossed textures mimic the feel of real wood grain. Adds authenticity and visual depth to your floors.',
-      image: '/products/laminate.jpg'
+      image: '/products/laminate.webp'
     },
     {
       name: 'Wide Plank',
       description: 'Wider planks create a modern, spacious feel. Perfect for contemporary commercial spaces and open floor plans.',
-      image: '/products/laminate.jpg'
+      image: '/products/laminate.webp'
     },
     {
       name: 'Premium Collection',
       description: 'High-end laminate with superior printing technology and realistic wood textures. Luxury look at a fraction of the cost.',
-      image: '/products/laminate.jpg'
+      image: '/products/laminate.webp'
     }
   ];
 

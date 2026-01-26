@@ -12,8 +12,9 @@ const AboutHome: React.FC = () => {
           <div className="order-2 lg:order-1 flex justify-center">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl max-w-md w-full">
               <img 
-                src="/abs-building.png" 
+                src="/abs-building.webp" 
                 alt="ABS Floor Covering Company - Phoenix, Arizona" 
+                loading="lazy"
                 className="w-full h-auto object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>

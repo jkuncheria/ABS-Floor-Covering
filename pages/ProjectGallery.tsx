@@ -14,7 +14,7 @@ const ProjectGallery: React.FC = () => {
       title: 'Embassy Hotel',
       location: 'Phoenix, AZ',
       description: '11 story remodel that consisted of over 200 guest rooms with hexagon porcelain tiles at all unit entries and bathroom floors and showers along with tub surrounds. Double stick carpet at hallways, 12×24 at common areas on guestroom floors. Main lobby was over 12K square feet of 12×24, porcelain tiles planks along with planks on walls, metal tiles over bar, and metal trim, wrapped steps and ramp transitions. Rubber / vinyl flooring at fitness area.',
-      image: '/Project-Gallery/embassy-hotel.jpg'
+      image: '/Project-Gallery/embassy-hotel.webp'
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ const ProjectGallery: React.FC = () => {
       title: 'Inspire Kids',
       location: 'Chandler, AZ',
       description: 'Installation of various vinyl planks throughout all common areas and corridors along with rubber base throughout. Specialized decorative tile installed in restrooms walls and floors, comprised of multi tile patterns. Included was some areas consisting of 3×6 ceramic subway tile and waterproofing on walls in addition to accessory metals.',
-      image: '/Project-Gallery/inspire-kids.jpg'
+      image: '/Project-Gallery/inspire-kids.webp'
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ const ProjectGallery: React.FC = () => {
       title: 'The Heard Building',
       location: 'Phoenix Downtown, AZ',
       description: '5 levels of flooring and wall installations consisting from 24×24 tile to 8×8 cement tiles along with multiple floors consisting of carpet tiles, vinyl plank and refinished historical mosaic tile corridors.',
-      image: '/Project-Gallery/heard-building.jpg'
+      image: '/Project-Gallery/heard-building.webp'
     },
     {
       id: 4,
@@ -38,7 +38,7 @@ const ProjectGallery: React.FC = () => {
       title: 'Hilton Garden Inn',
       location: 'Tempe, AZ',
       description: 'Garden Inn Hotel was a ground up, new build. All 4 floors along with the 1st floor common areas consisted of: 40,000 Sq/ft of various tile formats throughout rooms, common areas and 1st floor. 2200 Sq/yd of glue down carpet: 1600 Sq/yd of stretch in carpet and stair ways on both sides of hotel.',
-      image: '/Project-Gallery/hilton-garden.jpg'
+      image: '/Project-Gallery/hilton-garden.webp'
     },
     {
       id: 5,
@@ -46,7 +46,7 @@ const ProjectGallery: React.FC = () => {
       title: 'Coach Stores',
       location: 'Valleywide, AZ',
       description: 'Coach Stores were performed at several different locations ranging from Arrowhead to Fashion Square Mall. Each store consisted of 550 Sq/yd of patterned special custom rugs that required seaming per manufacturers diagrams and allowed very little variance due to the 1″ circles patterned throughout, as well as 350 Sq/ft 24×24″ granite tile throughout certain stores.',
-      image: '/Project-Gallery/coach-stores.jpg'
+      image: '/Project-Gallery/coach-stores.webp'
     },
     {
       id: 6,
@@ -54,7 +54,7 @@ const ProjectGallery: React.FC = () => {
       title: 'AMC 24',
       location: 'Ahwatukee, AZ',
       description: 'AMC Ahwatukee was a 24 auditorium full remodel. The install consisted of 12000 Sq/yd of broadloom glue down patterns and inserts. The auditoriums had carpeted walls along with customized stairs, wraps and insets at every platform level. The array of geometric inserts extended out to the common area walkways.',
-      image: '/Project-Gallery/amc-theaters.jpg'
+      image: '/Project-Gallery/amc-theaters.webp'
     },
     {
       id: 7,
@@ -62,7 +62,7 @@ const ProjectGallery: React.FC = () => {
       title: 'Element Hotel',
       location: 'Chandler, AZ',
       description: 'Element Hotel in Chandler consisted of 4 floors of over 2,300 Sq/yds of inlaid sheet vinyl with pvc underlayment at all the guestrooms, along with over 2000 yards carpet tiles and over 7,000 linear ft of millwork base throughout common areas and guest rooms. The 1st floor areas consisted of sheet vinyl, double stick carpet, glue down broadloom and some epoxy flooring.',
-      image: '/Project-Gallery/element-hotel.jpg'
+      image: '/Project-Gallery/element-hotel.webp'
     },
     {
       id: 8,
@@ -70,7 +70,7 @@ const ProjectGallery: React.FC = () => {
       title: 'U of A College of Medicine',
       location: 'Phoenix, AZ',
       description: 'This was part of a Phoenix Historical Society Project. It consisted of installing over 8,000 Sq/ft of re-claimed historical hardwood in an auditorium and classroom/administration buildings. After install, ABS refinished the entire floor until desired consistency and finish was accomplished.',
-      image: '/Project-Gallery/uofa-medicine.jpg'
+      image: '/Project-Gallery/uofa-medicine.webp'
     },
     {
       id: 9,
@@ -78,7 +78,7 @@ const ProjectGallery: React.FC = () => {
       title: 'Cambria Hotel',
       location: 'Chandler, AZ',
       description: 'Cambria Hotel Chandler was a ground up, new build. It consisted of 5 floors of guestroom Luxury vinyl planks, with a carpet tile inset in each of the bedrooms. At every elevator landing, there were 12×24″ porcelain tiles wrapping a carpet inset with schluter metal. At 1st floor, there were hand crafted tiles on walls, stone on columns, multi sized large format tiles at main lobby and tile in restrooms.',
-      image: '/Project-Gallery/cambria-hotel.jpg'
+      image: '/Project-Gallery/cambria-hotel.webp'
     },
   ];
 
