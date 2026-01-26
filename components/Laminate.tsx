@@ -26,7 +26,7 @@ const Laminate: React.FC = () => {
     },
     {
       name: 'Wide Plank',
-      description: 'Wider planks create a modern, spacious feel. Perfect for contemporary homes and open floor plans.',
+      description: 'Wider planks create a modern, spacious feel. Perfect for contemporary commercial spaces and open floor plans.',
       image: '/products/laminate.jpg'
     },
     {
@@ -45,7 +45,7 @@ const Laminate: React.FC = () => {
     {
       icon: <Shield className="w-8 h-8 text-blue-900" />,
       title: 'Durable & Scratch Resistant',
-      description: 'Tough wear layer protects against scratches, dents, and fading. Perfect for homes with pets and active families.'
+      description: 'Tough wear layer protects against scratches, dents, and fading. Perfect for high-traffic commercial spaces.'
     },
     {
       icon: <Sparkles className="w-8 h-8 text-blue-900" />,
@@ -83,7 +83,7 @@ const Laminate: React.FC = () => {
               <div className="w-20 h-1 bg-yellow-500 mb-6"></div>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Discover the perfect balance of beauty, durability, and affordability with laminate flooring. 
-                Get the stunning look of hardwood without the high price tag, perfect for any room in your home.
+                Get the stunning look of hardwood without the high price tag, perfect for any commercial space.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/contact" className="bg-blue-900 hover:bg-blue-800 text-white font-bold py-4 px-8 rounded-xl transition-all transform hover:scale-105 shadow-lg flex items-center justify-center gap-2 group">
@@ -154,7 +154,7 @@ const Laminate: React.FC = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Explore Our Laminate Collection</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              From classic styles to waterproof options, find the perfect laminate for your home and lifestyle.
+              From classic styles to waterproof options, find the perfect laminate for your commercial project.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -243,7 +243,7 @@ const Laminate: React.FC = () => {
             Ready to Find Your Perfect Laminate?
           </h3>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Visit our showroom to see our extensive laminate collection, or schedule a free in-home consultation 
+            Visit our showroom to see our extensive laminate collection, or schedule a free on-site consultation 
             to explore options for your space.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

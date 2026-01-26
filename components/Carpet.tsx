@@ -31,7 +31,7 @@ const Carpet: React.FC = () => {
     },
     {
       name: 'Saxony',
-      description: 'Classic cut-pile style with a smooth, uniform appearance. Timeless elegance for any home.',
+      description: 'Classic cut-pile style with a smooth, uniform appearance. Timeless elegance for any commercial space.',
       image: '/products/carpet.png'
     }
   ];
@@ -40,12 +40,12 @@ const Carpet: React.FC = () => {
     {
       icon: <Heart className="w-8 h-8 text-blue-900" />,
       title: 'Comfort & Warmth',
-      description: 'Carpet provides unmatched comfort underfoot and natural insulation, keeping your home warmer and quieter.'
+      description: 'Carpet provides unmatched comfort underfoot and natural insulation, keeping your commercial space warmer and quieter.'
     },
     {
       icon: <Shield className="w-8 h-8 text-blue-900" />,
       title: 'Safety',
-      description: 'Soft surface reduces the risk of slips and falls, making carpet ideal for homes with children and seniors.'
+      description: 'Soft surface reduces the risk of slips and falls, making carpet ideal for commercial spaces prioritizing safety.'
     },
     {
       icon: <Sparkles className="w-8 h-8 text-blue-900" />,
@@ -55,7 +55,7 @@ const Carpet: React.FC = () => {
     {
       icon: <Home className="w-8 h-8 text-blue-900" />,
       title: 'Sound Absorption',
-      description: 'Carpet significantly reduces noise, creating a quieter, more peaceful home environment.'
+      description: 'Carpet significantly reduces noise, creating a quieter, more peaceful commercial environment.'
     }
   ];
 
@@ -83,7 +83,7 @@ const Carpet: React.FC = () => {
               <div className="w-20 h-1 bg-yellow-500 mb-6"></div>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Experience the ultimate in comfort and warmth with our premium carpet selection. From plush luxury 
-                to durable performance, find the perfect carpet to transform your home into a cozy haven.
+                to durable performance, find the perfect carpet to transform your commercial space.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/contact" className="bg-blue-900 hover:bg-blue-800 text-white font-bold py-4 px-8 rounded-xl transition-all transform hover:scale-105 shadow-lg flex items-center justify-center gap-2 group">
@@ -154,7 +154,7 @@ const Carpet: React.FC = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Explore Our Carpet Collection</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              From plush luxury to durable performance, find the perfect carpet style for your home.
+              From plush luxury to durable performance, find the perfect carpet style for your commercial space.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -243,7 +243,7 @@ const Carpet: React.FC = () => {
             Ready to Feel the Comfort?
           </h3>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Visit our showroom to feel the difference quality carpet makes, or schedule a free in-home consultation 
+            Visit our showroom to feel the difference quality carpet makes, or schedule a free on-site consultation 
             to see samples in your space.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

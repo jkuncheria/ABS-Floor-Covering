@@ -3,13 +3,22 @@ import { NavItem, Category, Feature } from './types';
 import { BadgeCheck, Users, Wrench, Truck } from 'lucide-react';
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: 'Hardwood', href: '/hardwood' },
-  { label: 'Carpet', href: '/carpet' },
-  { label: 'Tile', href: '/tile' },
-  { label: 'Luxury Vinyl', href: '/luxury-vinyl' },
-  { label: 'Laminate', href: '/laminate' },
+  { 
+    label: 'Flooring Products', 
+    href: '#',
+    subItems: [
+      { label: 'All Flooring Products', href: '/all-flooring-products' },
+      { label: 'Hardwood', href: '/hardwood' },
+      { label: 'Carpet', href: '/carpet' },
+      { label: 'Tile', href: '/tile' },
+      { label: 'Luxury Vinyl', href: '/luxury-vinyl' },
+      { label: 'Laminate', href: '/laminate' },
+    ]
+  },
+  { label: 'Commercial', href: '/commercial' },
+  { label: 'Residential & Multi-Family', href: '/residential' },
+  { label: 'Project Gallery', href: '/project-gallery' },
   { label: 'About Us', href: '/about' },
-  { label: 'Financing', href: '/financing' },
   { label: 'FAQ', href: '/faq' },
   { label: 'Contact', href: '/contact' },
 ];

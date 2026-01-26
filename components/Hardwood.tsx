@@ -11,12 +11,12 @@ const Hardwood: React.FC = () => {
     },
     {
       name: 'Maple',
-      description: 'Light-colored and smooth-grained, maple offers a modern, clean look perfect for contemporary homes.',
+      description: 'Light-colored and smooth-grained, maple offers a modern, clean look perfect for contemporary commercial spaces.',
       image: '/products/hardwood.jpg'
     },
     {
       name: 'Hickory',
-      description: 'Extremely hard and durable, hickory is perfect for high-traffic areas and homes with pets.',
+      description: 'Extremely hard and durable, hickory is perfect for high-traffic commercial areas.',
       image: '/products/hardwood.jpg'
     },
     {
@@ -26,7 +26,7 @@ const Hardwood: React.FC = () => {
     },
     {
       name: 'Cherry',
-      description: 'Warm reddish tones that deepen over time. Cherry hardwood brings warmth and character to your home.',
+      description: 'Warm reddish tones that deepen over time. Cherry hardwood brings warmth and character to your commercial space.',
       image: '/products/hardwood.jpg'
     },
     {
@@ -39,8 +39,8 @@ const Hardwood: React.FC = () => {
   const benefits = [
     {
       icon: <Home className="w-8 h-8 text-blue-900" />,
-      title: 'Increases Home Value',
-      description: 'Hardwood floors are a timeless investment that can significantly increase your home\'s resale value.'
+      title: 'Increases Property Value',
+      description: 'Hardwood floors are a timeless investment that can significantly increase your commercial property\'s value.'
     },
     {
       icon: <Sparkles className="w-8 h-8 text-blue-900" />,
@@ -78,12 +78,12 @@ const Hardwood: React.FC = () => {
             <div>
               <span className="text-blue-900 font-bold tracking-wider text-sm uppercase">HARDWOOD FLOORING</span>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mt-4 mb-6">
-                Timeless Elegance for Your Home
+                Timeless Elegance for Your Commercial Space
               </h1>
               <div className="w-20 h-1 bg-yellow-500 mb-6"></div>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Discover the natural beauty and lasting value of hardwood flooring. From classic oak to exotic species, 
-                we offer a wide selection of premium hardwood floors that will enhance your home for generations to come.
+                we offer a wide selection of premium hardwood floors that will enhance your commercial space for years to come.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/contact" className="bg-blue-900 hover:bg-blue-800 text-white font-bold py-4 px-8 rounded-xl transition-all transform hover:scale-105 shadow-lg flex items-center justify-center gap-2 group">
@@ -113,7 +113,7 @@ const Hardwood: React.FC = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose Hardwood?</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Hardwood flooring offers unmatched beauty, durability, and value for your home.
+              Hardwood flooring offers unmatched beauty, durability, and value for your commercial space.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -240,10 +240,10 @@ const Hardwood: React.FC = () => {
         {/* CTA Section */}
         <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-12 md:p-16 text-center">
           <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Ready to Transform Your Home?
+            Ready to Transform Your Commercial Space?
           </h3>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Visit our showroom to see our full selection of hardwood flooring, or schedule a free in-home consultation 
+            Visit our showroom to see our full selection of hardwood flooring, or schedule a free on-site consultation 
             to see samples in your space.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

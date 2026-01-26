@@ -1,39 +1,62 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, Phone, Mail } from 'lucide-react';
+import { Menu, X, Phone, Mail, ChevronDown } from 'lucide-react';
 import { NAV_ITEMS } from '../constants';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const dropdownRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const refs = Object.values(dropdownRefs.current) as (HTMLDivElement | null)[];
+      const clickedOutside = refs.every(
+        (ref: HTMLDivElement | null) => {
+          if (!ref) return true;
+          return !ref.contains(event.target as Node);
+        }
+      );
+      if (clickedOutside) {
+        setOpenDropdown(null);
+      }
+    };
+
+    if (openDropdown) {
+      document.addEventListener('mousedown', handleClickOutside);
+      return () => document.removeEventListener('mousedown', handleClickOutside);
+    }
+  }, [openDropdown]);
+
+  const toggleDropdown = (label: string) => {
+    setOpenDropdown(openDropdown === label ? null : label);
   };
 
   return (
     <header className="w-full flex flex-col font-sans z-50 relative">
       {/* Top Bar */}
       <div className="bg-gray-100 text-xs py-2 px-4 flex justify-center items-center border-b border-gray-200">
-        <div className="text-center text-blue-900 font-semibold">
-          <span className="mr-2">🏠 WE OFFER FLEXIBLE FINANCING OPTIONS!</span>
-          <Link to="/financing" onClick={scrollToTop} className="underline hover:text-blue-700">Learn More</Link>
-        </div>
+        <Link 
+          to="/contact" 
+          onClick={scrollToTop}
+          className="text-center text-blue-900 font-semibold hover:text-blue-700 transition-colors cursor-pointer"
+        >
+          <span>🏆 SERVING PHOENIX & THE SOUTHWEST | GET YOUR FREE QUOTE TODAY</span>
+        </Link>
       </div>
 
       {/* Main Header Content */}
-      <div className="bg-white py-4 px-4 md:px-8 lg:px-16 shadow-sm">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+      <div className="bg-white py-5 md:py-6 px-4 md:px-8 lg:px-16 shadow-sm">
+        <div className="flex flex-col md:grid md:grid-cols-3 items-center gap-4 relative min-h-[90px] md:min-h-0">
           
-          {/* Logo & Mobile Menu Toggle */}
-          <div className="w-full md:w-auto flex justify-between items-center">
-            <Link to="/" onClick={scrollToTop} className="flex items-center">
-               <img 
-                 src="/abslogo.png" 
-                 alt="ABS Floor Covering" 
-                 className="h-12 md:h-16 w-auto object-contain"
-               />
-            </Link>
-            <div className="flex items-center gap-2 md:hidden">
+          {/* Mobile Contact Buttons (Left side on mobile) */}
+          <div className="w-full md:w-auto flex justify-start items-center md:hidden md:col-span-1 absolute left-4 top-1/2 transform -translate-y-1/2 md:relative md:left-0 md:top-0 md:transform-none">
+            <div className="flex items-center gap-2">
               <Link 
                 to="/contact"
                 onClick={scrollToTop}
@@ -41,23 +64,38 @@ const Header: React.FC = () => {
               >
                 <Mail className="w-5 h-5" />
               </Link>
-            <a 
-              href="tel:16024151919"
-              className="p-2 bg-blue-900 text-white rounded-lg"
-            >
-              <Phone className="w-5 h-5" />
-            </a>
+              <a 
+                href="tel:16024151919"
+                className="p-2 bg-blue-900 text-white rounded-lg"
+              >
+                <Phone className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
+
+          {/* Mobile Menu Toggle (Right side on mobile) */}
+          <div className="md:hidden absolute right-4 top-1/2 transform -translate-y-1/2">
             <button 
-                className="p-2 text-gray-600"
+              className="p-2 text-gray-600"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? <X /> : <Menu />}
             </button>
-            </div>
+          </div>
+
+          {/* Logo - Centered */}
+          <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 md:relative md:left-0 md:top-0 md:transform-none md:col-start-2 md:col-end-3 md:flex md:justify-center">
+            <Link to="/" onClick={scrollToTop} className="flex items-center justify-center group">
+              <img 
+                src="/abslogo.png" 
+                alt="ABS Floor Covering" 
+                className="h-12 md:h-16 lg:h-20 w-auto object-contain"
+              />
+            </Link>
           </div>
 
           {/* Call & Contact Buttons (Desktop) */}
-          <div className="hidden md:flex items-center space-x-3">
+          <div className="hidden md:flex items-center space-x-3 md:col-start-3 md:col-end-4 md:justify-end">
             <Link 
               to="/contact"
               onClick={scrollToTop}
@@ -101,15 +139,52 @@ const Header: React.FC = () => {
             {NAV_ITEMS.map((item) => (
               <li 
                 key={item.label} 
-                className="border-b border-blue-800 md:border-none last:border-none"
+                className="border-b border-blue-800 md:border-none last:border-none relative"
               >
-                {item.href.startsWith('#') ? (
-                <a 
-                  href={item.href} 
-                  className="block py-3 md:py-4 hover:text-yellow-400 transition-colors"
-                >
-                  {item.label.toUpperCase()}
-                </a>
+                {item.subItems && item.subItems.length > 0 ? (
+                  // Dropdown menu
+                  <div 
+                    className="relative"
+                    ref={(el) => {
+                      if (el) {
+                        dropdownRefs.current[item.label] = el;
+                      }
+                    }}
+                  >
+                    <button
+                      onClick={() => toggleDropdown(item.label)}
+                      className="w-full md:w-auto flex items-center justify-between py-3 md:py-4 hover:text-yellow-400 transition-colors"
+                    >
+                      <span>{item.label.toUpperCase()}</span>
+                      <ChevronDown className={`w-4 h-4 ml-1 transition-transform ${openDropdown === item.label ? 'rotate-180' : ''}`} />
+                    </button>
+                    {openDropdown === item.label && (
+                      <ul className="md:absolute md:top-full md:left-0 md:mt-0 bg-blue-800 md:shadow-lg md:min-w-[200px] md:rounded-b-lg overflow-hidden">
+                        {item.subItems.map((subItem) => (
+                          <li key={subItem.label} className="border-b border-blue-700 last:border-none">
+                            <Link
+                              to={subItem.href}
+                              className="block py-3 px-4 md:px-6 hover:bg-blue-700 hover:text-yellow-400 transition-colors"
+                              onClick={() => {
+                                setIsMenuOpen(false);
+                                setOpenDropdown(null);
+                                scrollToTop();
+                              }}
+                            >
+                              {subItem.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                ) : item.href.startsWith('#') ? (
+                  <a 
+                    href={item.href} 
+                    className="block py-3 md:py-4 hover:text-yellow-400 transition-colors"
+                  >
+                    {item.label.toUpperCase()}
+                  </a>
                 ) : item.href.startsWith('http://') || item.href.startsWith('https://') ? (
                   <a 
                     href={item.href} 

@@ -15,7 +15,7 @@ const FAQ: React.FC = () => {
         },
         {
           question: 'Do you offer free estimates?',
-          answer: 'Yes! We offer free, no-obligation estimates for all flooring projects. Our experts will visit your home, measure your space, and provide a detailed quote. Schedule a consultation today to get started.'
+          answer: 'Yes! We offer free, no-obligation estimates for all flooring projects. Our experts will visit your commercial space, measure your area, and provide a detailed quote. Schedule a consultation today to get started.'
         },
         {
           question: 'What areas do you serve?',
@@ -35,8 +35,8 @@ const FAQ: React.FC = () => {
           answer: 'We carry a complete selection of flooring including hardwood, carpet, luxury vinyl, tile, and laminate. Each category offers numerous styles, colors, and price points to fit any budget and design preference.'
         },
         {
-          question: 'Do you have samples I can take home?',
-          answer: 'Yes! We encourage you to take samples home to see how they look in your space with your lighting and décor. Samples are available for all our flooring products at no charge.'
+          question: 'Do you have samples available?',
+          answer: 'Yes! We encourage you to take samples to see how they look in your commercial space with your lighting and décor. Samples are available for all our flooring products at no charge.'
         },
         {
           question: 'Can I see flooring options in my actual room?',
@@ -57,7 +57,7 @@ const FAQ: React.FC = () => {
         },
         {
           question: 'How long does installation take?',
-          answer: 'Installation time varies depending on the type of flooring and size of the project. Most residential installations take 1-3 days. We\'ll provide a timeline during your consultation and work efficiently to minimize disruption to your daily routine.'
+          answer: 'Installation time varies depending on the type of flooring and size of the project. Most commercial installations take 1-5 days depending on project scope. We\'ll provide a timeline during your consultation and work efficiently to minimize disruption to your business operations.'
         },
         {
           question: 'Do I need to move my furniture?',
@@ -128,7 +128,7 @@ const FAQ: React.FC = () => {
         },
         {
           question: 'Are warranties transferable?',
-          answer: 'Most product warranties are transferable to new homeowners, which can add value to your home. Installation warranties typically apply to the original purchaser. Specific terms will be outlined in your warranty documentation.'
+          answer: 'Most product warranties are transferable to new property owners, which can add value to your commercial property. Installation warranties typically apply to the original purchaser. Specific terms will be outlined in your warranty documentation.'
         }
       ]
     }

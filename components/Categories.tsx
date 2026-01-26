@@ -55,7 +55,7 @@ const Categories: React.FC = () => {
       
       <div className="mt-12 text-center">
           <Link 
-            to="/hardwood"
+            to="/all-flooring-products"
             className="inline-block border-2 border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white font-bold py-2 px-6 rounded transition-colors"
           >
               VIEW ALL FLOORS

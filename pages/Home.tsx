@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from '../components/Hero';
+import LogoBanner from '../components/LogoBanner';
 import Categories from '../components/Categories';
 import Visualizer from '../components/Visualizer';
 import Difference from '../components/Difference';
@@ -12,8 +13,9 @@ const Home: React.FC = () => {
   return (
     <>
       <Hero />
-      <Categories />
+      <LogoBanner />
       <AboutHome />
+      <Categories />
       <Visualizer />
       <Difference />
       {/* <Inspiration /> */}

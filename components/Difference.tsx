@@ -18,13 +18,13 @@ const Difference: React.FC = () => {
             {DIFFERENCE_FEATURES.slice(0, 3).map((feature, idx) => (
               <div key={idx} className="flex flex-col items-center text-center p-6 hover:bg-gray-50 rounded-lg transition-colors">
                 <div className="bg-blue-50 p-4 rounded-full flex-shrink-0 mb-4">
-                  {feature.icon}
-                </div>
+                        {feature.icon}
+                    </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{feature.title}</h3>
                   <p className="text-gray-600 leading-relaxed">{feature.description}</p>
                 </div>
-              </div>
+                </div>
             ))}
           </div>
         </div>

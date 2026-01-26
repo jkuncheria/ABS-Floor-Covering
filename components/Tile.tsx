@@ -65,7 +65,7 @@ const Tile: React.FC = () => {
     'Hypoallergenic and easy to clean',
     'Resistant to stains, scratches, and fading',
     'Can be used with radiant heating systems',
-    'Increases home value and appeal'
+    'Increases property value and appeal'
   ];
 
   return (
@@ -83,7 +83,7 @@ const Tile: React.FC = () => {
               <div className="w-20 h-1 bg-yellow-500 mb-6"></div>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Discover the perfect combination of style and durability with our premium tile flooring. From elegant 
-                natural stone to modern porcelain, find the ideal tile to enhance any space in your home.
+                natural stone to modern porcelain, find the ideal tile to enhance any commercial space.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/contact" className="bg-blue-900 hover:bg-blue-800 text-white font-bold py-4 px-8 rounded-xl transition-all transform hover:scale-105 shadow-lg flex items-center justify-center gap-2 group">
@@ -113,7 +113,7 @@ const Tile: React.FC = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose Tile?</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Tile flooring offers unmatched durability, water resistance, and design flexibility for your home.
+              Tile flooring offers unmatched durability, water resistance, and design flexibility for your commercial space.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -243,7 +243,7 @@ const Tile: React.FC = () => {
             Ready to Install Beautiful Tile?
           </h3>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Visit our showroom to see our extensive tile collection, or schedule a free in-home consultation 
+            Visit our showroom to see our extensive tile collection, or schedule a free on-site consultation 
             to explore options for your space.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -68,7 +68,7 @@ const Contact: React.FC<ContactProps> = ({ simplified = false }) => {
     try {
       const payload = {
         ...formData,
-        clientId: 'RL-BML2L6TL'
+        clientId: 'RL-PKAG7329'
         // Add additional fields here if the form expands (budget, projectType, images, etc.)
       };
 
@@ -112,7 +112,7 @@ const Contact: React.FC<ContactProps> = ({ simplified = false }) => {
         <div className="text-center mb-20">
           <span className="text-blue-900 font-bold tracking-wider text-sm uppercase">GET IN TOUCH</span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-4 mb-5">
-            Better yet, see us in person!
+            Get Your Project Started Today
           </h2>
           <div className="w-20 h-1 bg-yellow-500 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
@@ -141,13 +141,13 @@ const Contact: React.FC<ContactProps> = ({ simplified = false }) => {
                   </div>
                 </a>
 
-                <a href="mailto:info@absflooring.com" className="group flex items-start p-4 rounded-xl hover:bg-blue-50 transition-all duration-300 border border-transparent hover:border-blue-100">
+                <a href="mailto:terry@absflooring.com" className="group flex items-start p-4 rounded-xl hover:bg-blue-50 transition-all duration-300 border border-transparent hover:border-blue-100">
                   <div className="bg-gradient-to-br from-blue-900 to-blue-800 p-4 rounded-xl mr-4 group-hover:scale-110 transition-transform shadow-md flex-shrink-0">
                     <Mail className="w-6 h-6 text-white" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <h4 className="font-bold text-gray-900 mb-1 group-hover:text-blue-900 transition-colors">Email</h4>
-                    <p className="text-gray-700 font-semibold break-words text-sm sm:text-base">info@absflooring.com</p>
+                    <p className="text-gray-700 font-semibold break-words text-sm sm:text-base">terry@absflooring.com</p>
                     <p className="text-sm text-gray-500 mt-1">We respond within 24 hours</p>
                   </div>
                 </a>
@@ -384,7 +384,7 @@ const Contact: React.FC<ContactProps> = ({ simplified = false }) => {
                 </div>
                 <h3 className="text-xl font-bold mb-3">Schedule a Consultation</h3>
                 <p className="text-blue-100 mb-4 text-sm">
-                  Book a free in-home consultation to see samples in your space and get expert recommendations.
+                  Book a free on-site consultation to see samples in your space and get expert recommendations.
                 </p>
                 <button className="bg-white text-blue-900 hover:bg-gray-100 font-bold py-2 px-6 rounded-lg transition-all">
                   Book Now

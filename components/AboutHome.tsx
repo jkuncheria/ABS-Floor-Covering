@@ -10,9 +10,9 @@ const AboutHome: React.FC = () => {
           
           {/* Left Side - Image */}
           <div className="order-2 lg:order-1 flex justify-center">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl max-w-xl w-full">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl max-w-md w-full">
               <img 
-                src="/absimage.jpg" 
+                src="/abs-building.png" 
                 alt="ABS Floor Covering Company - Phoenix, Arizona" 
                 className="w-full h-auto object-cover"
               />
@@ -27,7 +27,7 @@ const AboutHome: React.FC = () => {
               About Us
             </h2>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Based in Phoenix, AZ, ABS Floor Coverings is a trusted flooring and wall solution contractor with over 100 years of combined industry experience. We serve commercial and private clients across the Southwestern United States, handling projects of any size or complexity with expert craftsmanship and installation warranties.
+              Based in Phoenix, AZ, ABS Floor Covering is a trusted flooring and wall solution contractor with over 100 years of combined industry experience. We serve commercial and private clients across the Southwestern United States, handling projects of any size or complexity with expert craftsmanship and installation warranties.
             </p>
             
             <div className="space-y-4 mb-8">
@@ -37,7 +37,7 @@ const AboutHome: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">Why Choose Us?</h3>
-                  <p className="text-gray-600">Commercial and residential clients throughout Phoenix, Dallas, El Paso, Denver, Las Vegas, and beyond trust ABS for superior flooring selection and exceptional attention to detail.</p>
+                  <p className="text-gray-600">Commercial clients throughout Phoenix, Dallas, El Paso, Denver, Las Vegas, and beyond trust ABS for superior flooring selection and exceptional attention to detail.</p>
                 </div>
               </div>
 

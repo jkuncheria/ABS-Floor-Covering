@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React from 'react';
 import { Star, Quote } from 'lucide-react';
 
 interface Testimonial {
@@ -13,106 +13,55 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: 'Sarah Johnson',
-    location: 'Austin, TX',
+    name: 'E S',
+    location: 'Phoenix, AZ',
     rating: 5,
-    text: 'The entire process was seamless from start to finish. The team helped us choose the perfect hardwood for our home, and the installation was flawless. We couldn\'t be happier with our new floors!',
-    product: 'Hardwood Flooring'
+    text: 'I just dropped off two pallets of flooring, they opened their dock early for me, the people were passionate about the jobs they provide to their community, the "boss man" came out and made sure I was being taken care of and not having to wait to unload, employees were fast, efficient, polite, well groomed, skilled, and gave myself and my co-driver 2 bottles of cold water each when they realized we were from out of town and were just winging it in the desert. Kinda makes me wish I lived nearby just so I could patronize such an awesome business.',
+    product: 'Commercial Flooring'
   },
   {
     id: 2,
-    name: 'Michael Chen',
-    location: 'Seattle, WA',
+    name: 'Sean Patrick',
+    location: 'Phoenix, AZ',
     rating: 5,
-    text: 'Outstanding customer service and incredible selection. The visualizer tool helped us see exactly how the luxury vinyl would look in our kitchen before we committed. Highly recommend!',
-    product: 'Luxury Vinyl'
+    text: 'I can\'t say enough good things about James, Terry, Chris and this company. They just wrapped a ten-location flooring project for one of our customers in the Phoenix Area and throughout the whole process, they maintained excellent communication in relaying project progress, details and completion photos to us at our offices here in Ohio. They even handled the logistics for us regarding the placement and relocating of the refrigeration trucks needed for perishables to be stored while the restaurant coolers were getting their new floors. They worked with us and our customer to schedule and complete these jobs at a time and in a manner that was the least disruptive to our customer\'s business so I would highly recommend them for any flooring job needed and look forward to working with them again in the future.',
+    product: 'Tile Installation'
   },
   {
     id: 3,
-    name: 'Emily Rodriguez',
-    location: 'Miami, FL',
+    name: 'Leanne Kinnard',
+    location: 'Phoenix, AZ',
     rating: 5,
-    text: 'We needed flooring that could handle our three kids and two dogs. The team recommended waterproof luxury vinyl, and it\'s been perfect. Easy to clean and still looks brand new after a year!',
-    product: 'Waterproof Flooring'
-  },
-  {
-    id: 4,
-    name: 'David Thompson',
-    location: 'Denver, CO',
-    rating: 5,
-    text: 'Professional installation team and beautiful results. The carpet we chose feels amazing underfoot and the color matches perfectly with our decor. Worth every penny!',
+    text: 'Just had a great experience with ABS. The carpet looks beautiful. Great selection, good quality, fair prices superior service. They took great care to come to my house, and guide me to the right products for my situation. They delivered what they promised when they promised in a clean and efficient fashion. Fantastic installer. Highly recommend ABS!',
     product: 'Carpet'
   },
   {
-    id: 5,
-    name: 'Jennifer Williams',
-    location: 'Portland, OR',
+    id: 4,
+    name: 'AFSP Arizona',
+    location: 'Phoenix, AZ',
     rating: 5,
-    text: 'The financing options made it easy to get the floors we wanted without breaking the bank. The staff was knowledgeable and patient with all our questions. Great experience!',
-    product: 'Tile Flooring'
+    text: 'Working with Terry and his staff have been amazing. Their attention to detail, craftsmanship, and communication have been above my expectations! They are very competitively priced and I will absolutely be coming back for my next project!',
+    product: 'Commercial Flooring'
+  },
+  {
+    id: 5,
+    name: 'Leigh Adelmann',
+    location: 'Phoenix, AZ',
+    rating: 5,
+    text: 'Great team! Couldn\'t be happier with the detail and professionalism!',
+    product: 'Professional Installation'
   },
   {
     id: 6,
-    name: 'Robert Martinez',
+    name: 'Mark Hart',
     location: 'Phoenix, AZ',
     rating: 5,
-    text: 'From consultation to completion, everything exceeded our expectations. The laminate flooring looks like real wood but was much more affordable. Couldn\'t be happier!',
-    product: 'Laminate Flooring'
+    text: 'Good people',
+    product: 'Customer Service'
   }
 ];
 
 const Testimonials: React.FC = () => {
-  const [showFallback, setShowFallback] = useState(false);
-  const widgetRef = useRef<HTMLDivElement>(null);
-  const checkIntervalRef = useRef<NodeJS.Timeout | null>(null);
-
-  useEffect(() => {
-    // Check if widget loads successfully
-    const checkWidgetLoaded = () => {
-      if (widgetRef.current) {
-        // Check if widget has content - look for Elfsight widget elements
-        const hasContent = 
-          widgetRef.current.children.length > 0 || 
-          widgetRef.current.querySelector('.elfsight-widget') !== null ||
-          widgetRef.current.offsetHeight > 100; // Widget should have substantial height
-        
-        if (hasContent) {
-          // Widget loaded successfully, hide fallback
-          setShowFallback(false);
-          if (checkIntervalRef.current) {
-            clearInterval(checkIntervalRef.current);
-          }
-          return true;
-        }
-      }
-      return false;
-    };
-
-    // Start checking after a delay to allow widget to load
-    const initialTimeout = setTimeout(() => {
-      // Check periodically for widget content
-      checkIntervalRef.current = setInterval(() => {
-        checkWidgetLoaded();
-      }, 500);
-
-      // If widget doesn't load within 6 seconds, show fallback
-      setTimeout(() => {
-        if (!checkWidgetLoaded()) {
-          setShowFallback(true);
-          if (checkIntervalRef.current) {
-            clearInterval(checkIntervalRef.current);
-          }
-        }
-      }, 6000);
-    }, 1000);
-
-    return () => {
-      clearTimeout(initialTimeout);
-      if (checkIntervalRef.current) {
-        clearInterval(checkIntervalRef.current);
-      }
-    };
-  }, []);
 
   const renderStars = (rating: number) => {
     return Array.from({ length: 5 }).map((_, index) => (
@@ -127,7 +76,7 @@ const Testimonials: React.FC = () => {
     ));
   };
 
-  const renderFallbackTestimonials = () => (
+  const renderTestimonials = () => (
     <>
       {/* Testimonials Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -168,28 +117,6 @@ const Testimonials: React.FC = () => {
           </div>
         ))}
       </div>
-
-      {/* Trust Indicators */}
-      <div className="mt-16 pt-12 border-t border-gray-200">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          <div>
-            <div className="text-4xl font-bold text-blue-900 mb-2">500+</div>
-            <div className="text-gray-600 text-sm">Store Locations</div>
-          </div>
-          <div>
-            <div className="text-4xl font-bold text-blue-900 mb-2">50K+</div>
-            <div className="text-gray-600 text-sm">Happy Customers</div>
-          </div>
-          <div>
-            <div className="text-4xl font-bold text-blue-900 mb-2">4.9/5</div>
-            <div className="text-gray-600 text-sm">Average Rating</div>
-          </div>
-          <div>
-            <div className="text-4xl font-bold text-blue-900 mb-2">50+</div>
-            <div className="text-gray-600 text-sm">Years Experience</div>
-          </div>
-        </div>
-      </div>
     </>
   );
 
@@ -213,16 +140,50 @@ const Testimonials: React.FC = () => {
           </p>
         </div>
 
-        {/* Elfsight Widget Container */}
-        <div 
-          ref={widgetRef}
-          className="elfsight-app-8ad7902f-d1db-4142-bf3d-679723c87380" 
-          data-elfsight-app-lazy
-          style={{ minHeight: showFallback ? '0' : '400px' }}
-        ></div>
+        {/* Google Reviews Header Banner */}
+        <div className="bg-white rounded-xl shadow-lg border-2 border-gray-200 p-6 mb-12">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-4">
+              {/* Google Logo */}
+              <div className="flex items-center gap-2">
+                <svg className="w-8 h-8" viewBox="0 0 24 24">
+                  <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                  <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                  <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                  <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                </svg>
+                <span className="text-xl font-semibold text-gray-900">Reviews</span>
+              </div>
+              
+              {/* Rating */}
+              <div className="flex items-center gap-2">
+                <span className="text-3xl font-bold text-gray-900">5.0</span>
+                <div className="flex items-center gap-0.5">
+                  {Array.from({ length: 5 }).map((_, index) => (
+                    <Star
+                      key={index}
+                      className="w-6 h-6 fill-yellow-400 text-yellow-400"
+                    />
+                  ))}
+                </div>
+                <span className="text-gray-500 text-sm">(12)</span>
+              </div>
+            </div>
 
-        {/* Fallback Testimonials - Show if widget doesn't load */}
-        {showFallback && renderFallbackTestimonials()}
+            {/* Review Button */}
+            <a
+              href="https://www.google.com/maps/place/ABS+Floor+Covering/@33.4646836,-112.1242513,17z/data=!4m18!1m9!3m8!1s0x872b1397ad96236f:0x13b931f5042e3ed1!2sABS+Floor+Covering!8m2!3d33.4646792!4d-112.1216764!9m1!1b1!16s%2Fg%2F1wnbygyw!3m7!1s0x872b1397ad96236f:0x13b931f5042e3ed1!8m2!3d33.4646792!4d-112.1216764!9m1!1b1!16s%2Fg%2F1wnbygyw?entry=ttu&g_ep=EgoyMDI2MDEyMS4wIKXMDSoKLDEwMDc5MjA2N0gBUAM%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-full transition-colors shadow-md hover:shadow-lg"
+            >
+              Review us on Google
+            </a>
+          </div>
+        </div>
+
+        {/* Testimonials */}
+        {renderTestimonials()}
       </div>
     </section>
   );

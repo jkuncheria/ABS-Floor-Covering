@@ -45,7 +45,7 @@ const LuxuryVinyl: React.FC = () => {
     {
       icon: <Shield className="w-8 h-8 text-blue-900" />,
       title: 'Extremely Durable',
-      description: 'Resistant to scratches, dents, and stains. Perfect for homes with pets, kids, and high foot traffic.'
+      description: 'Resistant to scratches, dents, and stains. Perfect for commercial spaces with high foot traffic.'
     },
     {
       icon: <Sparkles className="w-8 h-8 text-blue-900" />,
@@ -154,7 +154,7 @@ const LuxuryVinyl: React.FC = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Explore Our Luxury Vinyl Collection</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              From wood-look planks to tile-look options, find the perfect luxury vinyl for your home.
+              From wood-look planks to tile-look options, find the perfect luxury vinyl for your commercial space.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -240,10 +240,10 @@ const LuxuryVinyl: React.FC = () => {
         {/* CTA Section */}
         <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-12 md:p-16 text-center">
           <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Ready to Transform Your Home?
+            Ready to Transform Your Commercial Space?
           </h3>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Visit our showroom to see our extensive luxury vinyl collection, or schedule a free in-home consultation 
+            Visit our showroom to see our extensive luxury vinyl collection, or schedule a free on-site consultation 
             to explore options for your space.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

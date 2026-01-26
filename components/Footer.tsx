@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
+import { Facebook, Linkedin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
     <footer className="bg-gray-100 pt-16 pb-8 px-4 md:px-16 border-t border-gray-200">
       <div className="max-w-7xl mx-auto">
         
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           
           {/* Brand */}
           <div>
@@ -28,20 +28,23 @@ const Footer: React.FC = () => {
             </p>
             <div className="text-sm text-gray-600 mb-4 space-y-1">
               <p><a href="tel:16024151919" className="hover:text-blue-900">602-415-1919</a></p>
-              <p><a href="mailto:info@absflooring.com" className="hover:text-blue-900">info@absflooring.com</a></p>
+              <p><a href="mailto:terry@absflooring.com" className="hover:text-blue-900">terry@absflooring.com</a></p>
             </div>
             <div className="flex space-x-4">
-              <a href="https://www.facebook.com/indianabestflooring/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-900 transition-colors"><Facebook className="w-5 h-5"/></a>
-              <a href="#" className="text-gray-400 hover:text-pink-600 transition-colors"><Instagram className="w-5 h-5"/></a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors"><Twitter className="w-5 h-5"/></a>
-              <a href="#" className="text-gray-400 hover:text-red-600 transition-colors"><Youtube className="w-5 h-5"/></a>
+              <a href="https://www.facebook.com/ABSFloors/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-900 transition-colors"><Facebook className="w-5 h-5"/></a>
+              <a href="https://www.linkedin.com/company/abs-floor-covering/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-700 transition-colors"><Linkedin className="w-5 h-5"/></a>
             </div>
           </div>
 
-          {/* Links Column 1 */}
+          {/* Products */}
           <div>
-            <h4 className="font-bold text-gray-900 mb-4 uppercase text-sm tracking-wider">Shop</h4>
+            <h4 className="font-bold text-gray-900 mb-4 uppercase text-sm tracking-wider">Products</h4>
             <ul className="space-y-2 text-sm text-gray-600">
+              <li>
+                <Link to="/all-flooring-products" onClick={scrollToTop} className="hover:text-blue-900">
+                  All Flooring Products
+                </Link>
+              </li>
               <li>
                 <Link to="/hardwood" onClick={scrollToTop} className="hover:text-blue-900">
                   Hardwood
@@ -70,18 +73,73 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Links Column 2 */}
+          {/* Services */}
           <div>
-            <h4 className="font-bold text-gray-900 mb-4 uppercase text-sm tracking-wider">Resources</h4>
+            <h4 className="font-bold text-gray-900 mb-4 uppercase text-sm tracking-wider">Services</h4>
             <ul className="space-y-2 text-sm text-gray-600">
+              <li>
+                <Link to="/commercial" onClick={scrollToTop} className="hover:text-blue-900">
+                  Commercial Flooring
+                </Link>
+              </li>
+              <li>
+                <Link to="/residential" onClick={scrollToTop} className="hover:text-blue-900">
+                  Residential & Multi-Family
+                </Link>
+              </li>
+              <li>
+                <Link to="/polished-concrete" onClick={scrollToTop} className="hover:text-blue-900">
+                  Polished Concrete
+                </Link>
+              </li>
+              <li>
+                <Link to="/stained-concrete" onClick={scrollToTop} className="hover:text-blue-900">
+                  Stained Concrete
+                </Link>
+              </li>
+              <li>
+                <Link to="/epoxy-flooring" onClick={scrollToTop} className="hover:text-blue-900">
+                  Epoxy Flooring
+                </Link>
+              </li>
+              <li>
+                <Link to="/floor-restoration" onClick={scrollToTop} className="hover:text-blue-900">
+                  Floor Restoration
+                </Link>
+              </li>
+              <li>
+                <Link to="/moisture-testing" onClick={scrollToTop} className="hover:text-blue-900">
+                  Moisture Testing
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Locations & Resources */}
+          <div>
+            <h4 className="font-bold text-gray-900 mb-4 uppercase text-sm tracking-wider">Locations</h4>
+            <ul className="space-y-2 text-sm text-gray-600 mb-6">
+              <li>
+                <Link to="/commercial-flooring-phoenix" onClick={scrollToTop} className="hover:text-blue-900">
+                  Phoenix Commercial
+                </Link>
+              </li>
+              <li>
+                <Link to="/commercial-flooring-scottsdale" onClick={scrollToTop} className="hover:text-blue-900">
+                  Scottsdale Commercial
+                </Link>
+              </li>
+            </ul>
+            <h4 className="font-bold text-gray-900 mb-4 uppercase text-sm tracking-wider">Resources</h4>
+            <ul className="space-y-2 text-sm text-gray-600 mb-6">
               <li>
                 <Link to="/about" onClick={scrollToTop} className="hover:text-blue-900">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/financing" onClick={scrollToTop} className="hover:text-blue-900">
-                  Financing
+                <Link to="/project-gallery" onClick={scrollToTop} className="hover:text-blue-900">
+                  Project Gallery
                 </Link>
               </li>
               <li>
@@ -97,39 +155,37 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-           {/* Hours */}
-           <div>
+          {/* Store Hours */}
+          <div>
             <h4 className="font-bold text-gray-900 mb-4 uppercase text-sm tracking-wider">Store Hours</h4>
-            <div className="text-sm text-gray-600 space-y-2">
-              <div className="pt-2 space-y-1">
-                <div className="flex justify-between">
-                  <span className="font-semibold text-gray-900">Mon</span>
-                  <span>09:00 am – 05:00 pm</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="font-semibold text-gray-900">Tue</span>
-                  <span>09:00 am – 05:00 pm</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="font-semibold text-gray-900">Wed</span>
-                  <span>09:00 am – 05:00 pm</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="font-semibold text-gray-900">Thu</span>
-                  <span>09:00 am – 05:00 pm</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="font-semibold text-gray-900">Fri</span>
-                  <span>09:00 am – 05:00 pm</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="font-semibold text-gray-900">Sat</span>
-                  <span>08:00 am – 12:00 pm</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="font-semibold text-gray-900">Sun</span>
-                  <span>Closed</span>
-                </div>
+            <div className="text-sm text-gray-600 space-y-1">
+              <div className="flex justify-between">
+                <span className="font-semibold text-gray-900">Monday</span>
+                <span>8 AM–5 PM</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="font-semibold text-gray-900">Tuesday</span>
+                <span>8 AM–5 PM</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="font-semibold text-gray-900">Wednesday</span>
+                <span>8 AM–5 PM</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="font-semibold text-gray-900">Thursday</span>
+                <span>8 AM–5 PM</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="font-semibold text-gray-900">Friday</span>
+                <span>8 AM–5 PM</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="font-semibold text-gray-900">Saturday</span>
+                <span>Closed</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="font-semibold text-gray-900">Sunday</span>
+                <span>Closed</span>
               </div>
             </div>
           </div>

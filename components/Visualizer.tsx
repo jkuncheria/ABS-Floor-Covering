@@ -19,12 +19,12 @@ const Visualizer: React.FC = () => {
           
           {/* Left Side - Content */}
           <div className="order-2 lg:order-1">
-            <span className="text-blue-900 font-bold tracking-wider text-sm uppercase">SEE IT IN YOUR HOME</span>
+            <span className="text-blue-900 font-bold tracking-wider text-sm uppercase">SEE IT IN YOUR SPACE</span>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-3 mb-6 leading-tight">
               See It In Your Space With Our AI Visualizer
             </h2>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Snap a photo of your living room, kitchen, or bedroom. Then watch as we transform it with any floor from our collection. See exactly how that gorgeous hardwood or plush carpet will look in <em>your</em> space—before you spend a dime.
+              Snap a photo of your commercial space, office, or retail area. Then watch as we transform it with any floor from our collection. See exactly how that gorgeous hardwood or durable carpet will look in <em>your</em> space—before you spend a dime.
             </p>
             <ul className="space-y-3 mb-8 text-gray-700">
               <li className="flex items-start">
@@ -49,7 +49,7 @@ const Visualizer: React.FC = () => {
               onClick={handleOpenVisualizer}
               className="bg-blue-900 hover:bg-blue-800 text-white font-bold py-4 px-8 rounded-lg transition-all transform hover:scale-105 shadow-lg flex items-center gap-2 group"
             >
-              Start Visualizing Your Room
+              Start Visualizing Your Space
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
           </div>
