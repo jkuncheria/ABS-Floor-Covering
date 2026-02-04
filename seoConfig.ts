@@ -104,6 +104,16 @@ export const SEO_CONFIG = {
       title: 'All Flooring Products | ABS Floor Covering Phoenix',
       description: 'Browse our complete selection of flooring products. Hardwood, carpet, tile, luxury vinyl, laminate & specialty flooring. Commercial & residential. Call 602-415-1919.',
       path: '/all-flooring-products'
+    },
+    blog: {
+      title: 'Flooring Blog | Expert Tips & Industry Insights | ABS Floor Covering',
+      description: 'Expert flooring insights, industry trends, and tips from Phoenix\'s premier commercial flooring contractor. Learn about retail flooring, commercial design, and more.',
+      path: '/blog'
+    },
+    blogRetailFlooring: {
+      title: 'How Retail Flooring Impacts Customer Experience and Sales | ABS Floor Covering',
+      description: 'Discover how strategic flooring choices can increase dwell time, reinforce brand identity, and drive higher conversion rates in your Phoenix retail space.',
+      path: '/blog/retail-flooring-customer-experience-sales'
     }
   }
 };

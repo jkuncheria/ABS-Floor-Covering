@@ -30,27 +30,14 @@ const LogoBanner: React.FC = () => {
       name: 'University of Arizona',
       image: '/Logos/uofa.webp',
     },
-    {
-      name: 'HopSocial',
-      image: '/Logos/hopsocial.webp',
-    },
-    {
-      name: 'Embassy',
-      image: '/Logos/embassy.webp',
-    },
-    {
-      name: 'Partner',
-      image: '/Logos/Untitled+design+(1).webp',
-    },
   ];
 
-  // Duplicate logos for seamless infinite scroll
-  const duplicatedLogos = [...logos, ...logos];
+  const allLogos = [...logos, ...logos];
 
   return (
     <>
       <style>{`
-        @keyframes scroll {
+        @keyframes scroll-left {
           0% {
             transform: translateX(0);
           }
@@ -58,42 +45,41 @@ const LogoBanner: React.FC = () => {
             transform: translateX(-50%);
           }
         }
-        .animate-scroll {
-          animation: scroll 6s linear infinite;
-          will-change: transform;
+        .logo-track {
+          display: flex;
+          width: fit-content;
+          animation: scroll-left 30s linear infinite;
         }
-        @media (min-width: 768px) {
-          .animate-scroll {
-            animation: scroll 10s linear infinite;
-          }
-        }
-        .animate-scroll:hover {
+        .logo-track:hover {
           animation-play-state: paused;
         }
+        @media (max-width: 768px) {
+          .logo-track {
+            animation: scroll-left 20s linear infinite;
+          }
+        }
       `}</style>
-      <section className="py-12 bg-gray-50 border-y border-gray-200 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 md:px-16">
-          <div className="text-center mb-8">
-            <p className="text-sm text-gray-600 uppercase tracking-wider font-semibold">
-              Our Past Project Partners
-            </p>
-          </div>
-          <div className="relative overflow-hidden">
-            <div className="flex animate-scroll gap-28 items-center">
-              {duplicatedLogos.map((logo, index) => (
-                <div
-                  key={index}
-                  className="flex items-center justify-center flex-shrink-0 w-40 h-20"
-                >
-                  <img
-                    src={logo.image}
-                    alt={logo.name}
-                    loading="lazy"
-                    className="max-h-full max-w-full object-contain"
-                  />
-                </div>
-              ))}
-            </div>
+      <section className="py-12 bg-gray-50 border-y border-gray-200">
+        <div className="text-center mb-8">
+          <p className="text-sm text-gray-600 uppercase tracking-wider font-semibold">
+            Our Past Project Partners
+          </p>
+        </div>
+        <div className="overflow-hidden">
+          <div className="logo-track">
+            {allLogos.map((logo, index) => (
+              <div
+                key={index}
+                className="flex items-center justify-center flex-shrink-0 px-8 md:px-12"
+              >
+                <img
+                  src={logo.image}
+                  alt={logo.name}
+                  className="h-12 md:h-16 w-auto object-contain"
+                  style={{ minWidth: '100px', maxWidth: '160px' }}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>

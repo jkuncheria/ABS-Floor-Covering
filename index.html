@@ -54,14 +54,19 @@
     
     <!-- Third-party scripts with defer for non-blocking load -->
     <script src="https://elfsightcdn.com/platform.js" defer></script>
-    <script
-      defer
-      id="roomvoAssistant"
-      type="text/javascript"
-      data-locale="en-us"
-      data-position="bottom-left"
-      src="https://www.roomvo.com/static/scripts/b2b/common/assistant.js"
-    ></script>
+    <script>
+      // Only load Roomvo widget on desktop (screen width >= 1024px)
+      if (window.innerWidth >= 1024) {
+        var roomvoScript = document.createElement('script');
+        roomvoScript.defer = true;
+        roomvoScript.id = 'roomvoAssistant';
+        roomvoScript.type = 'text/javascript';
+        roomvoScript.setAttribute('data-locale', 'en-us');
+        roomvoScript.setAttribute('data-position', 'bottom-left');
+        roomvoScript.src = 'https://www.roomvo.com/static/scripts/b2b/common/assistant.js';
+        document.head.appendChild(roomvoScript);
+      }
+    </script>
     
     <!-- Structured Data - LocalBusiness Schema -->
     <script type="application/ld+json">

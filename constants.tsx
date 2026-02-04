@@ -20,6 +20,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'Project Gallery', href: '/project-gallery' },
   { label: 'About Us', href: '/about' },
   { label: 'FAQ', href: '/faq' },
+  { label: 'Blog', href: '/blog' },
   { label: 'Contact', href: '/contact' },
 ];
 

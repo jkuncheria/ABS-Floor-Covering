@@ -23,6 +23,8 @@ import ScottsdaleCommercial from './pages/ScottsdaleCommercial';
 import StainedConcrete from './pages/StainedConcrete';
 import EpoxyFlooring from './pages/EpoxyFlooring';
 import MoistureTesting from './pages/MoistureTesting';
+import Blog from './pages/Blog';
+import BlogPostRetailFlooring from './pages/BlogPost-RetailFlooring';
 
 const App: React.FC = () => {
   return (
@@ -53,6 +55,8 @@ const App: React.FC = () => {
             <Route path="/stained-concrete" element={<StainedConcrete />} />
             <Route path="/epoxy-flooring" element={<EpoxyFlooring />} />
             <Route path="/moisture-testing" element={<MoistureTesting />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/retail-flooring-customer-experience-sales" element={<BlogPostRetailFlooring />} />
             {/* Redirect old URLs */}
             {/* Redirect to Location-specific Commercial pages */}
             <Route path="/commercial-flooring-installation-phoenix" element={<Navigate to="/commercial-flooring-phoenix" replace />} />
@@ -87,7 +91,8 @@ const App: React.FC = () => {
             <Route path="/testing" element={<Navigate to="/about" replace />} />
             <Route path="/events" element={<Navigate to="/about" replace />} />
             <Route path="/reviews" element={<Navigate to="/about" replace />} />
-            <Route path="/blog" element={<Navigate to="/about" replace />} />
+                        <Route path="/commercial-flooring-contractors-phoenix-az" element={<Navigate to="/commercial-flooring-phoenix" replace />} />
+            <Route path="/commercial-flooring-contractors-phoenix-az/*" element={<Navigate to="/commercial-flooring-phoenix" replace />} />
           </Routes>
       </main>
 
