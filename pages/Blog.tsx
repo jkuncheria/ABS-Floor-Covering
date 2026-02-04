@@ -24,6 +24,26 @@ const blogPosts: BlogPost[] = [
     date: 'February 4, 2026',
     readTime: '12 min read',
     category: 'Commercial Flooring'
+  },
+  {
+    id: '2',
+    slug: 'lvt-vs-hardwood-commercial-flooring',
+    title: 'LVT vs. Hardwood Flooring: Which Is Right for Your Commercial Space?',
+    excerpt: 'Compare luxury vinyl tile (LVT) and hardwood flooring for commercial spaces. Learn about cost, durability, maintenance, and which option is best for your Phoenix business.',
+    image: '/products/hardwood.webp',
+    date: 'January 30, 2026',
+    readTime: '14 min read',
+    category: 'Commercial Flooring'
+  },
+  {
+    id: '3',
+    slug: '2026-commercial-flooring-trends-phoenix',
+    title: '2026 Commercial Flooring Trends: What Phoenix Business Owners Need to Know',
+    excerpt: 'Discover the top commercial flooring trends for 2026 including warm tones, sustainable materials, bold patterns, and low-maintenance options for Phoenix businesses.',
+    image: '/Project-Gallery/hilton-garden.webp',
+    date: 'January 25, 2026',
+    readTime: '11 min read',
+    category: 'Industry Trends'
   }
 ];
 

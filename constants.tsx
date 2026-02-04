@@ -18,8 +18,16 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'Commercial', href: '/commercial' },
   { label: 'Residential & Multi-Family', href: '/residential' },
   { label: 'Project Gallery', href: '/project-gallery' },
-  { label: 'About Us', href: '/about' },
-  { label: 'FAQ', href: '/faq' },
+  { 
+    label: 'About', 
+    href: '#',
+    subItems: [
+      { label: 'About Us', href: '/about' },
+      { label: 'FAQ', href: '/faq' },
+      { label: 'Phoenix Commercial Flooring', href: '/commercial-flooring-phoenix' },
+      { label: 'Scottsdale Commercial Flooring', href: '/commercial-flooring-scottsdale' },
+    ]
+  },
   { label: 'Blog', href: '/blog' },
   { label: 'Contact', href: '/contact' },
 ];

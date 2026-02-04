@@ -25,6 +25,8 @@ import EpoxyFlooring from './pages/EpoxyFlooring';
 import MoistureTesting from './pages/MoistureTesting';
 import Blog from './pages/Blog';
 import BlogPostRetailFlooring from './pages/BlogPost-RetailFlooring';
+import BlogPostLVTvsHardwood from './pages/BlogPost-LVTvsHardwood';
+import BlogPostFlooringTrends2026 from './pages/BlogPost-FlooringTrends2026';
 
 const App: React.FC = () => {
   return (
@@ -57,6 +59,8 @@ const App: React.FC = () => {
             <Route path="/moisture-testing" element={<MoistureTesting />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/retail-flooring-customer-experience-sales" element={<BlogPostRetailFlooring />} />
+            <Route path="/blog/lvt-vs-hardwood-commercial-flooring" element={<BlogPostLVTvsHardwood />} />
+            <Route path="/blog/2026-commercial-flooring-trends-phoenix" element={<BlogPostFlooringTrends2026 />} />
             {/* Redirect old URLs */}
             {/* Redirect to Location-specific Commercial pages */}
             <Route path="/commercial-flooring-installation-phoenix" element={<Navigate to="/commercial-flooring-phoenix" replace />} />

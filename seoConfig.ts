@@ -114,6 +114,16 @@ export const SEO_CONFIG = {
       title: 'How Retail Flooring Impacts Customer Experience and Sales | ABS Floor Covering',
       description: 'Discover how strategic flooring choices can increase dwell time, reinforce brand identity, and drive higher conversion rates in your Phoenix retail space.',
       path: '/blog/retail-flooring-customer-experience-sales'
+    },
+    blogLVTvsHardwood: {
+      title: 'LVT vs. Hardwood Flooring: Which Is Right for Your Commercial Space? | ABS Floor Covering',
+      description: 'Compare luxury vinyl tile (LVT) and hardwood flooring for commercial spaces. Learn about cost, durability, maintenance, and which option is best for your Phoenix business.',
+      path: '/blog/lvt-vs-hardwood-commercial-flooring'
+    },
+    blogFlooringTrends2026: {
+      title: '2026 Commercial Flooring Trends: What Phoenix Business Owners Need to Know | ABS Floor Covering',
+      description: 'Discover the top commercial flooring trends for 2026 including warm tones, sustainable materials, bold patterns, and low-maintenance options for Phoenix businesses.',
+      path: '/blog/2026-commercial-flooring-trends-phoenix'
     }
   }
 };
