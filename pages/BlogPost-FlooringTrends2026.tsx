@@ -1,14 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import { Calendar, Clock, Share2, Phone, User, ChevronRight, HelpCircle, TrendingUp, Leaf, Palette, Layers } from 'lucide-react';
-import SEO from '../components/SEO';
 
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "2026 Commercial Flooring Trends: What Phoenix Business Owners Need to Know",
   "description": "Discover the top commercial flooring trends for 2026 including warm tones, sustainable materials, bold patterns, and low-maintenance options for Phoenix businesses.",
-  "image": "https://www.absflooring.com/Project-Gallery/hilton-garden.webp",
+  "image": "https://www.absflooring.com/gallery-images/hilton-garden.webp",
   "author": {
     "@type": "Organization",
     "name": "ABS Floor Covering",
@@ -105,11 +104,6 @@ const faqSchema = {
 const BlogPostFlooringTrends2026: React.FC = () => {
   return (
     <>
-      <SEO 
-        title="2026 Commercial Flooring Trends: What Phoenix Business Owners Need to Know | ABS Floor Covering"
-        description="Discover the top commercial flooring trends for 2026 including warm tones, sustainable materials, bold patterns, and low-maintenance options for Phoenix businesses."
-        path="/blog/2026-commercial-flooring-trends-phoenix"
-      />
       
       {/* JSON-LD Structured Data */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
@@ -118,7 +112,7 @@ const BlogPostFlooringTrends2026: React.FC = () => {
       
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 py-16 md:py-24">
-        <div className="absolute inset-0 bg-[url('/Project-Gallery/hilton-garden.webp')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0 bg-[url('/gallery-images/hilton-garden.webp')] bg-cover bg-center opacity-20" />
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb Navigation */}
           <nav aria-label="Breadcrumb" className="mb-6">
@@ -169,7 +163,7 @@ const BlogPostFlooringTrends2026: React.FC = () => {
           {/* Featured Image */}
           <div className="mb-12 rounded-xl overflow-hidden shadow-lg">
             <img 
-              src="/Project-Gallery/hilton-garden.webp" 
+              src="/gallery-images/hilton-garden.webp" 
               alt="2026 commercial flooring trends in Phoenix hotel lobby - modern flooring design by ABS Floor Covering featuring warm tones and contemporary patterns"
               className="w-full h-auto"
               loading="eager"
@@ -518,7 +512,7 @@ const BlogPostFlooringTrends2026: React.FC = () => {
             {/* Image Break */}
             <div className="my-12 rounded-xl overflow-hidden shadow-lg">
               <img 
-                src="/Project-Gallery/element-hotel.webp" 
+                src="/gallery-images/element-hotel.webp" 
                 alt="Biophilic commercial flooring design in Scottsdale hotel - natural materials and warm tones by ABS Floor Covering"
                 className="w-full h-auto"
                 loading="lazy"
@@ -782,7 +776,7 @@ const BlogPostFlooringTrends2026: React.FC = () => {
             <Link to="/blog/retail-flooring-customer-experience-sales" className="group">
               <div className="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
                 <div className="h-48 overflow-hidden">
-                  <img src="/Project-Gallery/coach-stores.webp" alt="Retail Flooring" className="w-full h-full object-cover" />
+                  <img src="/gallery-images/coach-stores.webp" alt="Retail Flooring" className="w-full h-full object-cover" />
                 </div>
                 <div className="p-4">
                   <h3 className="font-bold text-gray-900 group-hover:text-blue-700 transition">

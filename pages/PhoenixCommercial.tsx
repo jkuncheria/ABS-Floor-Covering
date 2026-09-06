@@ -1,11 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import { MapPin, Building2, Clock, Shield, ArrowRight, Phone, CheckCircle, Users, Award, Zap, FileCheck, TrendingUp, Wrench, Star } from 'lucide-react';
-import SEO from '../components/SEO';
 import { SEO_CONFIG } from '../seoConfig';
 
 const PhoenixCommercial: React.FC = () => {
-  const seo = SEO_CONFIG.pages.phoenixCommercial;
 
   const serviceTypes = [
     {
@@ -185,11 +183,6 @@ const PhoenixCommercial: React.FC = () => {
 
   return (
     <>
-      <SEO 
-        title={seo.title}
-        description={seo.description}
-        canonical={`${SEO_CONFIG.baseUrl}${seo.path}`}
-      />
       <section className="py-24 bg-white px-4 md:px-16">
       <div className="max-w-7xl mx-auto">
         

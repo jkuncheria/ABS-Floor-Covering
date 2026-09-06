@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import { CheckCircle, Home, Shield, Sparkles, ArrowRight, DollarSign, Phone } from 'lucide-react';
 
 const Laminate: React.FC = () => {

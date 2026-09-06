@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import { CheckCircle, Droplet, Shield, Sparkles, ArrowRight, Wrench, Phone } from 'lucide-react';
 
 const LuxuryVinyl: React.FC = () => {

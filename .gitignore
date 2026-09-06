@@ -23,3 +23,9 @@ dist-ssr
 *.sln
 *.sw?
 .vercel
+
+# react-router framework mode build output
+build
+.react-router
+.env
+.env.*

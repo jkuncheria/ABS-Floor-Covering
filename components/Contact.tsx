@@ -3,9 +3,11 @@ import { Send, Mail, Phone, MapPin, ChevronDown, Clock, Facebook, Linkedin, User
 
 interface ContactProps {
   simplified?: boolean;
+  /** Renders the section heading as the page h1 on the standalone /contact page. */
+  standalone?: boolean;
 }
 
-const Contact: React.FC<ContactProps> = ({ simplified = false }) => {
+const Contact: React.FC<ContactProps> = ({ simplified = false, standalone = false }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -111,9 +113,17 @@ const Contact: React.FC<ContactProps> = ({ simplified = false }) => {
         {/* Header */}
         <div className="text-center mb-20">
           <span className="text-blue-900 font-bold tracking-wider text-sm uppercase">GET IN TOUCH</span>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-4 mb-5">
-            Get Your Project Started Today
-          </h2>
+          {/* h1 on the standalone /contact page; the homepage embeds this
+              section below its own h1, so it stays an h2 there. */}
+          {standalone ? (
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mt-4 mb-5">
+              Get Your Project Started Today
+            </h1>
+          ) : (
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-4 mb-5">
+              Get Your Project Started Today
+            </h2>
+          )}
           <div className="w-20 h-1 bg-yellow-500 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
             We stay in constant communication with our customers until the job is done. To get a free quote, or if you have questions or special requests, just drop us a line.

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Heart, MapPin, Clock, Handshake } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 
 const AboutHome: React.FC = () => {
   return (

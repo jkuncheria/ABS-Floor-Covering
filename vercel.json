@@ -1,8 +1,116 @@
 {
+  "outputDirectory": "build/client",
+  "redirects": [
+    {
+      "source": "/commercial-flooring-installation-phoenix",
+      "destination": "/commercial-flooring-phoenix",
+      "permanent": true
+    },
+    {
+      "source": "/commercial-flooring-company-phoenix",
+      "destination": "/commercial-flooring-phoenix",
+      "permanent": true
+    },
+    {
+      "source": "/flooring-contractor-phoenix-commercial-flooring-installation",
+      "destination": "/commercial-flooring-phoenix",
+      "permanent": true
+    },
+    {
+      "source": "/commercial-flooring-contractors-scottsdale",
+      "destination": "/commercial-flooring-scottsdale",
+      "permanent": true
+    },
+    {
+      "source": "/commercial-flooring-contractor-scottsdale-2",
+      "destination": "/commercial-flooring-scottsdale",
+      "permanent": true
+    },
+    {
+      "source": "/commercial-flooring-company-scottsdale-commercial-flooring-installation",
+      "destination": "/commercial-flooring-scottsdale",
+      "permanent": true
+    },
+    {
+      "source": "/commercial-flooring-contractors-scottsdale-commercial-flooring-companies-scottsdale",
+      "destination": "/commercial-flooring-scottsdale",
+      "permanent": true
+    },
+    {
+      "source": "/how-commercial-flooring-contractors-in-scottsdale-help-you-create-an-attractive-and-highly-functional-space",
+      "destination": "/commercial-flooring-scottsdale",
+      "permanent": true
+    },
+    {
+      "source": "/commercial-flooring-flooring-supplier",
+      "destination": "/commercial",
+      "permanent": true
+    },
+    {
+      "source": "/commercial-concrete-polishing-scottsdale",
+      "destination": "/polished-concrete",
+      "permanent": true
+    },
+    {
+      "source": "/polished-sealed-concrete-phoenix",
+      "destination": "/polished-concrete",
+      "permanent": true
+    },
+    {
+      "source": "/information-on-concrete-honing-in-scottsdale",
+      "destination": "/polished-concrete",
+      "permanent": true
+    },
+    {
+      "source": "/hand-scraped-wood-look-porcelain-tile-supplier",
+      "destination": "/tile",
+      "permanent": true
+    },
+    {
+      "source": "/hardwood-flooring-contractor-phoenix",
+      "destination": "/hardwood",
+      "permanent": true
+    },
+    {
+      "source": "/floor-restoration-contractor-phoenix",
+      "destination": "/floor-restoration",
+      "permanent": true
+    },
+    {
+      "source": "/home-flooring-contractor-phoenix",
+      "destination": "/residential",
+      "permanent": true
+    },
+    {
+      "source": "/testing",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/events",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/reviews",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/commercial-flooring-contractors-phoenix-az",
+      "destination": "/commercial-flooring-phoenix",
+      "permanent": true
+    },
+    {
+      "source": "/commercial-flooring-contractors-phoenix-az/:path*",
+      "destination": "/commercial-flooring-phoenix",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/index.html"
+      "destination": "/__spa-fallback.html"
     }
   ],
   "headers": [
@@ -25,4 +133,3 @@
     }
   ]
 }
-

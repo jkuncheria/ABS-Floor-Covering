@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import { Calendar, Clock, Share2, Phone, User, ChevronRight, HelpCircle, CheckCircle, XCircle } from 'lucide-react';
-import SEO from '../components/SEO';
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -105,11 +104,6 @@ const faqSchema = {
 const BlogPostLVTvsHardwood: React.FC = () => {
   return (
     <>
-      <SEO 
-        title="LVT vs. Hardwood Flooring: Which Is Right for Your Commercial Space? | ABS Floor Covering"
-        description="Compare luxury vinyl tile (LVT) and hardwood flooring for commercial spaces. Learn about cost, durability, maintenance, and which option is best for your Phoenix business."
-        path="/blog/lvt-vs-hardwood-commercial-flooring"
-      />
       
       {/* JSON-LD Structured Data */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
@@ -647,7 +641,7 @@ const BlogPostLVTvsHardwood: React.FC = () => {
             {/* Image Break */}
             <div className="my-12 rounded-xl overflow-hidden shadow-lg">
               <img 
-                src="/Project-Gallery/hilton-garden.webp" 
+                src="/gallery-images/hilton-garden.webp" 
                 alt="Commercial flooring installation at Hilton Garden Inn Phoenix - professional hotel flooring by ABS Floor Covering"
                 className="w-full h-auto"
                 loading="lazy"
@@ -922,7 +916,7 @@ const BlogPostLVTvsHardwood: React.FC = () => {
             <Link to="/blog/retail-flooring-customer-experience-sales" className="group">
               <div className="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
                 <div className="h-48 overflow-hidden">
-                  <img src="/Project-Gallery/coach-stores.webp" alt="Retail Flooring" className="w-full h-full object-cover" />
+                  <img src="/gallery-images/coach-stores.webp" alt="Retail Flooring" className="w-full h-full object-cover" />
                 </div>
                 <div className="p-4">
                   <h3 className="font-bold text-gray-900 group-hover:text-blue-700 transition">

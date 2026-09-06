@@ -1,14 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import { Calendar, Clock, Share2, Phone, User, ChevronRight, HelpCircle } from 'lucide-react';
-import SEO from '../components/SEO';
 
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "How Retail Flooring Impacts Customer Experience and Sales",
   "description": "Discover how strategic flooring choices can increase dwell time, reinforce brand identity, and drive higher conversion rates in your Phoenix retail space.",
-  "image": "https://www.absflooring.com/Project-Gallery/coach-stores.webp",
+  "image": "https://www.absflooring.com/gallery-images/coach-stores.webp",
   "author": {
     "@type": "Organization",
     "name": "ABS Floor Covering",
@@ -105,11 +104,6 @@ const faqSchema = {
 const BlogPostRetailFlooring: React.FC = () => {
   return (
     <>
-      <SEO 
-        title="How Retail Flooring Impacts Customer Experience and Sales | ABS Floor Covering"
-        description="Discover how strategic flooring choices can increase dwell time by up to 40%, reinforce brand identity, and drive higher conversion rates in your Phoenix retail space."
-        path="/blog/retail-flooring-customer-experience-sales"
-      />
       
       {/* JSON-LD Structured Data */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
@@ -408,7 +402,7 @@ const BlogPostRetailFlooring: React.FC = () => {
             {/* Image Break */}
             <div className="my-12 rounded-xl overflow-hidden shadow-lg">
               <img 
-                src="/Project-Gallery/hilton-garden.webp" 
+                src="/gallery-images/hilton-garden.webp" 
                 alt="Commercial flooring zone design in Phoenix hotel - strategic flooring transitions by ABS Floor Covering demonstrating customer flow optimization"
                 className="w-full h-auto"
                 loading="lazy"
@@ -565,7 +559,7 @@ const BlogPostRetailFlooring: React.FC = () => {
             {/* Image Break */}
             <div className="my-12 rounded-xl overflow-hidden shadow-lg">
               <img 
-                src="/Project-Gallery/element-hotel.webp" 
+                src="/gallery-images/element-hotel.webp" 
                 alt="Brand-aligned commercial flooring design in Scottsdale hotel - luxury vinyl and tile installation by ABS Floor Covering reinforcing hospitality brand identity"
                 className="w-full h-auto"
                 loading="lazy"
@@ -864,7 +858,7 @@ const BlogPostRetailFlooring: React.FC = () => {
             <Link to="/project-gallery" className="group">
               <div className="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
                 <div className="h-48 overflow-hidden">
-                  <img src="/Project-Gallery/coach-stores.webp" alt="Project Gallery" className="w-full h-full object-cover" />
+                  <img src="/gallery-images/coach-stores.webp" alt="Project Gallery" className="w-full h-full object-cover" />
                 </div>
                 <div className="p-4">
                   <h3 className="font-bold text-gray-900 group-hover:text-blue-700 transition">

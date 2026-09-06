@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import { CheckCircle, Home, Shield, Sparkles, ArrowRight, Phone } from 'lucide-react';
 
 const Hardwood: React.FC = () => {

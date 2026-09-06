@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
-import SEO from '../components/SEO';
 
 interface BlogPost {
   id: string;
@@ -20,7 +19,7 @@ const blogPosts: BlogPost[] = [
     slug: 'retail-flooring-customer-experience-sales',
     title: 'How Retail Flooring Impacts Customer Experience and Sales',
     excerpt: 'Discover how strategic flooring choices can increase dwell time, reinforce your brand identity, and drive higher conversion rates in your retail space.',
-    image: '/Project-Gallery/coach-stores.webp',
+    image: '/gallery-images/coach-stores.webp',
     date: 'February 4, 2026',
     readTime: '12 min read',
     category: 'Commercial Flooring'
@@ -40,7 +39,7 @@ const blogPosts: BlogPost[] = [
     slug: '2026-commercial-flooring-trends-phoenix',
     title: '2026 Commercial Flooring Trends: What Phoenix Business Owners Need to Know',
     excerpt: 'Discover the top commercial flooring trends for 2026 including warm tones, sustainable materials, bold patterns, and low-maintenance options for Phoenix businesses.',
-    image: '/Project-Gallery/hilton-garden.webp',
+    image: '/gallery-images/hilton-garden.webp',
     date: 'January 25, 2026',
     readTime: '11 min read',
     category: 'Industry Trends'
@@ -50,11 +49,6 @@ const blogPosts: BlogPost[] = [
 const Blog: React.FC = () => {
   return (
     <>
-      <SEO 
-        title="Flooring Blog | Expert Tips & Industry Insights | ABS Floor Covering"
-        description="Expert flooring insights, industry trends, and tips from Phoenix's premier commercial flooring contractor. Learn about retail flooring, commercial design, and more."
-        path="/blog"
-      />
       
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 py-20">
