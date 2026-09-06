@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Send, Mail, Phone, MapPin, ChevronDown, Clock, Facebook, Instagram, Twitter, Youtube, Calendar, Users } from 'lucide-react';
+import { Send, Mail, Phone, MapPin, ChevronDown, Clock, Facebook, Linkedin, Users } from 'lucide-react';
 
 interface ContactProps {
   simplified?: boolean;
@@ -376,22 +376,9 @@ const Contact: React.FC<ContactProps> = ({ simplified = false }) => {
           </div>
         </div>
 
-            {/* Social Media & Additional Info */}
-            <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-gradient-to-br from-blue-900 to-blue-800 rounded-2xl p-8 text-white text-center">
-                <div className="bg-white bg-opacity-20 p-4 rounded-full inline-flex mb-4">
-                  <Calendar className="w-8 h-8" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">Schedule a Consultation</h3>
-                <p className="text-blue-100 mb-4 text-sm">
-                  Book a free on-site consultation to see samples in your space and get expert recommendations.
-                </p>
-                <button className="bg-white text-blue-900 hover:bg-gray-100 font-bold py-2 px-6 rounded-lg transition-all">
-                  Book Now
-                </button>
-              </div>
-
-              <div className="bg-gradient-to-br from-blue-900 to-blue-800 rounded-2xl p-8 text-white text-center">
+            {/* Social Media */}
+            <div className="mt-20 flex justify-center">
+              <div className="bg-gradient-to-br from-blue-900 to-blue-800 rounded-2xl p-8 text-white text-center max-w-md">
                 <div className="bg-white bg-opacity-20 p-4 rounded-full inline-flex mb-4">
                   <Users className="w-8 h-8" />
                 </div>
@@ -400,32 +387,13 @@ const Contact: React.FC<ContactProps> = ({ simplified = false }) => {
                   Follow us on social media for design inspiration, special offers, and flooring tips.
                 </p>
                 <div className="flex justify-center gap-3">
-                  <a href="https://www.facebook.com/indianabestflooring/" target="_blank" rel="noopener noreferrer" className="bg-white bg-opacity-20 hover:bg-opacity-30 p-2 rounded-lg transition-all">
+                  <a href="https://www.facebook.com/ABSFloors/" target="_blank" rel="noopener noreferrer" className="bg-white bg-opacity-20 hover:bg-opacity-30 p-2 rounded-lg transition-all">
                     <Facebook className="w-5 h-5" />
                   </a>
-                  <a href="#" className="bg-white bg-opacity-20 hover:bg-opacity-30 p-2 rounded-lg transition-all">
-                    <Instagram className="w-5 h-5" />
-                  </a>
-                  <a href="#" className="bg-white bg-opacity-20 hover:bg-opacity-30 p-2 rounded-lg transition-all">
-                    <Twitter className="w-5 h-5" />
-                  </a>
-                  <a href="#" className="bg-white bg-opacity-20 hover:bg-opacity-30 p-2 rounded-lg transition-all">
-                    <Youtube className="w-5 h-5" />
+                  <a href="https://www.linkedin.com/company/abs-floor-covering/" target="_blank" rel="noopener noreferrer" className="bg-white bg-opacity-20 hover:bg-opacity-30 p-2 rounded-lg transition-all">
+                    <Linkedin className="w-5 h-5" />
                   </a>
                 </div>
-              </div>
-
-              <div className="bg-gradient-to-br from-blue-900 to-blue-800 rounded-2xl p-8 text-white text-center">
-                <div className="bg-white bg-opacity-20 p-4 rounded-full inline-flex mb-4">
-                  <Phone className="w-8 h-8" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">Need Immediate Help?</h3>
-                <p className="text-blue-100 mb-4 text-sm">
-                  Call us directly for urgent questions or to speak with a flooring specialist right away.
-                </p>
-                <a href="tel:16024151919" className="bg-white text-blue-900 hover:bg-gray-100 font-bold py-2 px-6 rounded-lg transition-all inline-block">
-                  602-415-1919
-                </a>
               </div>
             </div>
           </>

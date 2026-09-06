@@ -118,7 +118,7 @@ const BlogPostRetailFlooring: React.FC = () => {
       
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 py-16 md:py-24">
-        <div className="absolute inset-0 bg-[url('/Project-Gallery/coach-stores.webp')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0 bg-[url('/cxinretail.jpg')] bg-cover bg-center opacity-20" />
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb Navigation */}
           <nav aria-label="Breadcrumb" className="mb-6">
@@ -169,8 +169,8 @@ const BlogPostRetailFlooring: React.FC = () => {
           {/* Featured Image */}
           <div className="mb-12 rounded-xl overflow-hidden shadow-lg">
             <img 
-              src="/Project-Gallery/coach-stores.webp" 
-              alt="Premium retail store flooring installation in Phoenix - LVT and hardwood flooring by ABS Floor Covering showcasing brand-aligned commercial flooring design"
+              src="/cxinretail.jpg" 
+              alt="Retail store flooring installation in Phoenix - customer experience and sales impact of commercial flooring by ABS Floor Covering"
               className="w-full h-auto"
               loading="eager"
             />
