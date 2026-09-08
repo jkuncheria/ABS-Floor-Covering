@@ -197,11 +197,9 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
           <p>&copy; 2025 ABS Floor Covering. All Rights Reserved.</p>
-          <div className="flex space-x-4 mt-4 md:mt-0">
-            <a href="#" className="hover:underline">Privacy Policy</a>
-            <a href="#" className="hover:underline">Terms of Use</a>
-            <a href="#" className="hover:underline">Accessibility</a>
-          </div>
+          {/* Privacy Policy / Terms / Accessibility links removed: they pointed
+              at href="#" and this site has no such pages to link to. Restore
+              them as <Link> elements once the pages exist. */}
         </div>
 
       </div>
