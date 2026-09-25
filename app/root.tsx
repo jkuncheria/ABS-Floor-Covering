@@ -58,6 +58,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {/* Google Search Console ownership proof for the URL-prefix property.
+            Must stay in the served HTML or the property loses verification. */}
+        <meta name="google-site-verification" content="ziGBtU5n_DdFYnLnx7KIKWNPh6Fa_WmLtNi_PWSoLcc" />
         <Meta />
         <Links />
 
