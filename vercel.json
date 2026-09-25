@@ -1,5 +1,6 @@
 {
   "outputDirectory": "build/client",
+  "trailingSlash": false,
   "redirects": [
     {
       "source": "/commercial-flooring-installation-phoenix",
