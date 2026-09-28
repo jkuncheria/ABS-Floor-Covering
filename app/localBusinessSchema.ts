@@ -2,7 +2,13 @@
  *  Rendered into every page from app/root.tsx. */
 export const LOCAL_BUSINESS_SCHEMA = {
   "@context": "https://schema.org",
-  "@type": "FlooringContractor",
+  /* GeneralContractor, not FlooringContractor. Schema.org has no flooring type:
+     HomeAndConstructionBusiness only subtypes to Electrician, GeneralContractor,
+     HVACBusiness, HousePainter, Locksmith, MovingCompany and RoofingContractor.
+     The invented type made Google reject the aggregateRating below it, so the
+     review stars were never eligible to show. The flooring specificity lives in
+     the description and in the Google Business Profile category. */
+  "@type": "GeneralContractor",
   "name": "ABS Floor Covering",
   "image": "https://www.absflooring.com/abslogo.png",
   "logo": "https://www.absflooring.com/abslogo.png",
