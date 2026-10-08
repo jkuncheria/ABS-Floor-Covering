@@ -67,7 +67,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
         {/* Tailwind is served from the CDN. src/index.css exists but is not
             imported anywhere, so removing this drops all styling. */}
         <script src="https://cdn.tailwindcss.com"></script>
-        <script src="https://elfsightcdn.com/platform.js" defer></script>
 
         {/* Roomvo visualiser, desktop only */}
         <script
@@ -120,8 +119,6 @@ export default function App() {
           <Outlet />
         </main>
         <Footer />
-        {/* Elfsight All-in-One Chat */}
-        <div className="elfsight-app-8d6fce49-bdbb-4276-a2df-2a4134016a6a" data-elfsight-app-lazy></div>
       </div>
     </>
   );
